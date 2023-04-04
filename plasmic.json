@@ -1,0 +1,229 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.11.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ]
+    },
+    {
+      "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+      "projectApiToken": "uOrnFmpE7oKe2htbhnZm9fxysbkB82lr46ksY5Ya3hVGNa0kUf9pNYDgwSEps6XpKiBzjDtO8Gppym47gBng",
+      "projectName": "Rakija Site",
+      "version": "latest",
+      "cssFilePath": "plasmic/rakija_site/plasmic_rakija_site.module.css",
+      "components": [
+        {
+          "id": "-NFrkmsG80gR",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/rakija_site/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "Homepage.jsx"
+          },
+          "cssFilePath": "plasmic/rakija_site/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "CzIKnLukEYe",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/rakija_site/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/rakija_site/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "o842yoUQZA",
+          "name": "AboutUs",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/rakija_site/PlasmicAboutUs.jsx",
+          "importSpec": {
+            "modulePath": "AboutUs.jsx"
+          },
+          "cssFilePath": "plasmic/rakija_site/PlasmicAboutUs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "FQi4hgRb6pr",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/rakija_site/icons/PlasmicIcon__Checksvg.jsx"
+        },
+        {
+          "id": "cuk0qwaJBss",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/rakija_site/icons/PlasmicIcon__Icon.jsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "Hq7ppN9dP",
+          "name": "image 1.png",
+          "filePath": "plasmic/rakija_site/images/image1Png.png"
+        },
+        {
+          "id": "zYiTn9rVH",
+          "name": "image 1.png 2",
+          "filePath": "plasmic/rakija_site/images/image1Png2.png"
+        },
+        {
+          "id": "-ij5mYOcX",
+          "name": "Vector 1.png",
+          "filePath": "plasmic/rakija_site/images/vector1Png.png"
+        },
+        {
+          "id": "eJIB0OQD7",
+          "name": "Vector 1.png 2",
+          "filePath": "plasmic/rakija_site/images/vector1Png2.png"
+        },
+        {
+          "id": "127lsLhox",
+          "name": "Vector 1.png 3",
+          "filePath": "plasmic/rakija_site/images/vector1Png3.png"
+        },
+        {
+          "id": "EwwrG-dK-",
+          "name": "Screen Shot 2023-02-16 at 12.22 1.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At12221Png.png"
+        },
+        {
+          "id": "PZb6jCg1d",
+          "name": "Screen Shot 2023-02-16 at 12.22 2.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At12222Png.png"
+        },
+        {
+          "id": "XqJZhr6En",
+          "name": "Screen Shot 2023-02-16 at 12.22 3.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At12223Png.png"
+        },
+        {
+          "id": "Jl-mMEUQ5",
+          "name": "Screen Shot 2023-02-16 at 12.22 4.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At12224Png.png"
+        },
+        {
+          "id": "eGP0Gc6hK",
+          "name": "Screen Shot 2023-02-16 at 1.25 1.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At1251Png.png"
+        },
+        {
+          "id": "DzTGY8o_u",
+          "name": "Screen Shot 2023-02-16 at 1.25 1.png 2",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At1251Png2.png"
+        },
+        {
+          "id": "la10StmJ-",
+          "name": "Screen Shot 2023-02-16 at 2.18.55 AM.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At21855AMpng.png"
+        },
+        {
+          "id": "SaShsi3cf",
+          "name": "Screen Shot 2023-02-16 at 2.24 1.png",
+          "filePath": "plasmic/rakija_site/images/screenShot20230216At2241Png.png"
+        },
+        {
+          "id": "M_CpDDsxT",
+          "name": "DSC_1656.png",
+          "filePath": "plasmic/rakija_site/images/dsc1656Png.png"
+        },
+        {
+          "id": "SjKhegzPo",
+          "name": "DSC_1658.png",
+          "filePath": "plasmic/rakija_site/images/dsc1658Png.png"
+        },
+        {
+          "id": "VL0XLMtOu",
+          "name": "DSC_1664.png",
+          "filePath": "plasmic/rakija_site/images/dsc1664Png.png"
+        },
+        {
+          "id": "AhI8nzE_z",
+          "name": "DSC_1665.png",
+          "filePath": "plasmic/rakija_site/images/dsc1665Png.png"
+        },
+        {
+          "id": "OaJ8iBJA9",
+          "name": "DSC_1668.png",
+          "filePath": "plasmic/rakija_site/images/dsc1668Png.png"
+        },
+        {
+          "id": "g_aPlSAsg",
+          "name": "DSC_1630 1.png",
+          "filePath": "plasmic/rakija_site/images/dsc16301Png.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "iQJZxOmZHE",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "UVHhYDXtcJ",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "7ks_1UnM646mq",
+        "name": "Screen",
+        "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+        "contextFilePath": "plasmic/rakija_site/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.250",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.250/dist/plasmic.schema.json"
+}
