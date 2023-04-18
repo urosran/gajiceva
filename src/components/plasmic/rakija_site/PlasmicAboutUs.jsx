@@ -23,6 +23,7 @@ import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_rakija_site.module.css"; // plasmic-import: toir4xKH4aRMjXM9AUeVMJ/projectcss
 import sty from "./PlasmicAboutUs.module.css"; // plasmic-import: o842yoUQZA/css
+import group1PngUT7LoZsTj from "./images/group1Png.png"; // plasmic-import: uT7loZsTJ/picture
 import vector1Png3127LsLhox from "./images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
 import dsc16301PngGAPlSAsg from "./images/dsc16301Png.png"; // plasmic-import: g_aPlSAsg/picture
 
@@ -67,6 +68,7 @@ function PlasmicAboutUs__RenderFunc(props) {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.parent
           )}
         >
@@ -84,24 +86,38 @@ function PlasmicAboutUs__RenderFunc(props) {
                 )}
                 href={"#"}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__nsze6)}
-                  displayHeight={"40px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  src={"https://static1.plasmic.app/nav-logo-placeholder.svg"}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___49Rt6
+                  )}
+                  href={`/`}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__n98N5)}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={{
+                      src: group1PngUT7LoZsTj,
+                      fullWidth: 727,
+                      fullHeight: 727,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </a>
               </a>
             }
             className={classNames("__wab_instance", sty.navigationBar)}
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__ypPp8)}
+                className={classNames(sty.img__uj9LY)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -119,40 +135,40 @@ function PlasmicAboutUs__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__xobDt
+                    sty.link__a0QOl
                   )}
-                  href={"/"}
+                  href={`/about`}
                 >
-                  {"ABOUT"}
+                  {"O NAMA"}
                 </a>
                 <a
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___5Bmdr
+                    sty.link__c2AP7
                   )}
-                  href={"/"}
+                  href={"#products"}
                 >
-                  {"OUR PRODUCTS"}
+                  {"PROIZVODI"}
                 </a>
                 <a
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___8B7Jd
+                    sty.link__qoTkV
                   )}
-                  href={"/"}
+                  href={"#contact"}
                 >
-                  {"CONTACT"}
+                  {"KONTAKT"}
                 </a>
               </React.Fragment>
             }
             openButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__tEsYe)}
+                className={classNames(sty.img___6Sw2M)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -261,45 +277,81 @@ function PlasmicAboutUs__RenderFunc(props) {
               data-plasmic-override={overrides.footerParentColumns}
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
-              <div className={classNames(projectcss.all, sty.column__aHqnf)}>
-                <div
+              <div className={classNames(projectcss.all, sty.column__fSrl1)}>
+                <a
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__qBsc4
+                    sty.link__jPaWk
                   )}
+                  href={`/about`}
                 >
-                  {
-                    "Learn More About Our Program\nLearn More About Our Products\nFeel Free To Contact Us Any Time"
-                  }
-                </div>
+                  {"Learn More About Our Program"}
+                </a>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__cMla7
+                  )}
+                  href={"#products"}
+                >
+                  {"Learn More About Our Products"}
+                </a>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__oohY
+                  )}
+                  href={"#contact"}
+                >
+                  {"Feel Free To Contact Us Any Time"}
+                </a>
               </div>
-              <div className={classNames(projectcss.all, sty.column__e6SSz)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__d6Ooo
-                  )}
-                >
-                  {"LOGO GOES HERE"}
-                </div>
+              <div className={classNames(projectcss.all, sty.column___5JhtC)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__b2UNq)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"50%"}
+                  loading={"lazy"}
+                  src={{
+                    src: group1PngUT7LoZsTj,
+                    fullWidth: 727,
+                    fullHeight: 727,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
-              <div className={classNames(projectcss.all, sty.column__ydzu)}>
+              <div className={classNames(projectcss.all, sty.column__ujlCd)}>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__t7UEv
+                    )}
+                  >
+                    {"CONTACT "}
+                  </div>
+                ) : null}
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__hTnnR
-                  )}
-                >
-                  {"CONTACT "}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vBoHq
+                    sty.text___1Es0I
                   )}
                 >
                   {"Street Address, Belgrade\n+123 456 9\nexample@gmail.com"}

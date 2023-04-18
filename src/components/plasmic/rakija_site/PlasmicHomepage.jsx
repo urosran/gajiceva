@@ -19,17 +19,19 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_rakija_site.module.css"; // plasmic-import: toir4xKH4aRMjXM9AUeVMJ/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: -NFrkmsG80gR/css
+import group1PngUT7LoZsTj from "./images/group1Png.png"; // plasmic-import: uT7loZsTJ/picture
 import vector1Png3127LsLhox from "./images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
-import dsc1656PngMCpDDsxT from "./images/dsc1656Png.png"; // plasmic-import: M_CpDDsxT/picture
-import dsc1665PngAhI8NzEZ from "./images/dsc1665Png.png"; // plasmic-import: AhI8nzE_z/picture
-import dsc1668PngOaJ8IBja9 from "./images/dsc1668Png.png"; // plasmic-import: OaJ8iBJA9/picture
-import dsc1664PngVl0XlMtOu from "./images/dsc1664Png.png"; // plasmic-import: VL0XLMtOu/picture
-import dsc1658PngSjKhegzPo from "./images/dsc1658Png.png"; // plasmic-import: SjKhegzPo/picture
-import screenShot20230216At1251Png2DzTgy8OU from "./images/screenShot20230216At1251Png2.png"; // plasmic-import: DzTGY8o_u/picture
+import maskGrouppng2NTlqluXgu from "./images/maskGrouppng2.png"; // plasmic-import: NTlqluXgu/picture
+import maskGroup1Png2GwXHtFlPg from "./images/maskGroup1Png2.png"; // plasmic-import: gwXHtFlPg/picture
+import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-import: I9PPuApWk/picture
+import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
+import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
+import h5SingleImg1AjpegFLnICaAkx from "./images/h5SingleImg1Ajpeg.jpg"; // plasmic-import: fLnICaAkx/picture
 import screenShot20230216At21855AMpngLa10StmJ from "./images/screenShot20230216At21855AMpng.png"; // plasmic-import: la10StmJ-/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
@@ -73,6 +75,7 @@ function PlasmicHomepage__RenderFunc(props) {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.parent
           )}
         >
@@ -90,24 +93,38 @@ function PlasmicHomepage__RenderFunc(props) {
                 )}
                 href={"#"}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__gA8Rw)}
-                  displayHeight={"40px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  src={"https://static1.plasmic.app/nav-logo-placeholder.svg"}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__zt2Jq
+                  )}
+                  href={`/`}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__gA8Rw)}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={{
+                      src: group1PngUT7LoZsTj,
+                      fullWidth: 727,
+                      fullHeight: 727,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </a>
               </a>
             }
             className={classNames("__wab_instance", sty.navigationBar)}
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__rdc9J)}
+                className={classNames(sty.img__esBvp)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -127,7 +144,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link___8TRqF
                   )}
-                  href={"/"}
+                  href={`/about`}
                 >
                   {"O NAMA"}
                 </a>
@@ -138,7 +155,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__oI0EN
                   )}
-                  href={"/"}
+                  href={"/#products"}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -149,7 +166,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link___6OAh
                   )}
-                  href={"/"}
+                  href={"#contact"}
                 >
                   {"KONTAKT"}
                 </a>
@@ -197,7 +214,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__q5LU0
                 )}
               >
-                {"GAJIĆEVA"}
+                {"GAJIĆEVA RAKIJA"}
               </div>
             </div>
             <div
@@ -255,6 +272,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"featuredProducts"}
             data-plasmic-override={overrides.featuredProducts}
             className={classNames(projectcss.all, sty.featuredProducts)}
+            id={"products"}
           >
             <p.Stack
               as={"div"}
@@ -280,9 +298,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: dsc1656PngMCpDDsxT,
-                    fullWidth: 190,
-                    fullHeight: 423,
+                    src: maskGrouppng2NTlqluXgu,
+                    fullWidth: 119,
+                    fullHeight: 362,
                     aspectRatio: undefined
                   }}
                 />
@@ -322,9 +340,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: dsc1665PngAhI8NzEZ,
-                    fullWidth: 190,
-                    fullHeight: 423,
+                    src: maskGroup1Png2GwXHtFlPg,
+                    fullWidth: 118,
+                    fullHeight: 361,
                     aspectRatio: undefined
                   }}
                 />
@@ -336,7 +354,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__mDyRx
                   )}
                 >
-                  {"PRODUCT THREE"}
+                  {"PRODUCT TWO"}
                 </div>
                 <div
                   className={classNames(
@@ -364,9 +382,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: dsc1668PngOaJ8IBja9,
-                    fullWidth: 190,
-                    fullHeight: 423,
+                    src: maskGroup3Png2I9PPuApWk,
+                    fullWidth: 113,
+                    fullHeight: 361,
                     aspectRatio: undefined
                   }}
                 />
@@ -378,7 +396,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text___8Lj7J
                   )}
                 >
-                  {"PRODUCT FOUR"}
+                  {"PRODUCT THREE"}
                 </div>
                 <div
                   className={classNames(
@@ -402,9 +420,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: dsc1664PngVl0XlMtOu,
-                    fullWidth: 191,
-                    fullHeight: 423,
+                    src: maskGroup2Png23NkeRtvJw,
+                    fullWidth: 122,
+                    fullHeight: 361,
                     aspectRatio: undefined
                   }}
                 />
@@ -444,9 +462,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: dsc1658PngSjKhegzPo,
-                    fullWidth: 190,
-                    fullHeight: 423,
+                    src: maskGroup4Png2LtRln4M9X,
+                    fullWidth: 118,
+                    fullHeight: 361,
                     aspectRatio: undefined
                   }}
                 />
@@ -472,6 +490,28 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
               <div className={classNames(projectcss.all, sty.column__ecCnG)} />
             </p.Stack>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__sMvi8)}>
+            <div className={classNames(projectcss.all, sty.freeBox__jsxsB)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__d1Ukt
+                )}
+              >
+                {"LOREM IPSUM DOLOR"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__pJg7O
+                )}
+              >
+                {"QUIS  RISUS SED VULPUTATE ODIO UT?"}
+              </div>
+            </div>
           </div>
           <div
             data-plasmic-name={"discover"}
@@ -503,17 +543,17 @@ function PlasmicHomepage__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img___7TgH)}
-                      displayHeight={"auto"}
+                      displayHeight={"768px"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"auto"}
+                      displayWidth={"552px"}
                       loading={"lazy"}
                       src={{
-                        src: screenShot20230216At1251Png2DzTgy8OU,
-                        fullWidth: 613,
-                        fullHeight: 659,
+                        src: h5SingleImg1AjpegFLnICaAkx,
+                        fullWidth: 978,
+                        fullHeight: 1100,
                         aspectRatio: undefined
                       }}
                     />
@@ -540,26 +580,22 @@ function PlasmicHomepage__RenderFunc(props) {
                   )}
                 >
                   {
-                    "LOREM IPSUM DOLOR SIT AMET, CONSECETUR ADIPISCING ELIT. NULLA AUCTOR LACINIA\nURNA."
+                    "NAPA VALLEY IS THE MOST\nFAMOUS WINEMAKING REGION IN PIEMONTE REGION"
                   }
                 </div>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__gDd8O
-                  )}
+                <Button
+                  className={classNames("__wab_instance", sty.button__vjkIk)}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__sU6H3
+                      sty.text__d2Ob
                     )}
                   >
                     {"DISCOVER"}
                   </div>
-                </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -574,89 +610,90 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-override={overrides.contactParent}
               hasGap={true}
               className={classNames(projectcss.all, sty.contactParent)}
+              id={"contact"}
             >
               <div
                 data-plasmic-name={"contact2"}
                 data-plasmic-override={overrides.contact2}
                 className={classNames(projectcss.all, sty.contact2)}
               >
-                {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__qbhZ2)}>
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ubJh8
+                      )}
+                    >
+                      {"LOREM IPSUM DOLOR"}
+                    </div>
+                  ) : null}
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__ubJh8
+                      sty.text__c2C25
                     )}
                   >
-                    {"LOREM IPSUM DOLOR"}
+                    {"GET IN TOUCH"}
                   </div>
-                ) : null}
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__c2C25
-                  )}
-                >
-                  {"GET IN TOUCH"}
-                </div>
-                <div
-                  data-plasmic-name={"name"}
-                  data-plasmic-override={overrides.name}
-                  className={classNames(projectcss.all, sty.name)}
-                >
                   <div
+                    data-plasmic-name={"name"}
+                    data-plasmic-override={overrides.name}
+                    className={classNames(projectcss.all, sty.name)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__zqb30
+                      )}
+                    >
+                      {"FULL NAME*"}
+                    </div>
+                  </div>
+                  <div
+                    data-plasmic-name={"email"}
+                    data-plasmic-override={overrides.email}
+                    className={classNames(projectcss.all, sty.email)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yG8Iz
+                      )}
+                    >
+                      {"EMAIL*"}
+                    </div>
+                  </div>
+                  <div
+                    data-plasmic-name={"message"}
+                    data-plasmic-override={overrides.message}
+                    className={classNames(projectcss.all, sty.message)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gBmVx
+                      )}
+                    >
+                      {"MESSAGE*"}
+                    </div>
+                  </div>
+                  <button
                     className={classNames(
                       projectcss.all,
+                      projectcss.button,
                       projectcss.__wab_text,
-                      sty.text__zqb30
+                      sty.button__kMYcu
                     )}
                   >
-                    {"FULL NAME*"}
-                  </div>
+                    {"SEND"}
+                  </button>
                 </div>
-                <div
-                  data-plasmic-name={"email"}
-                  data-plasmic-override={overrides.email}
-                  className={classNames(projectcss.all, sty.email)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yG8Iz
-                    )}
-                  >
-                    {"EMAIL*"}
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"message"}
-                  data-plasmic-override={overrides.message}
-                  className={classNames(projectcss.all, sty.message)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gBmVx
-                    )}
-                  >
-                    {"MESSAGE*"}
-                  </div>
-                </div>
-                <button
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.button,
-                    projectcss.__wab_text,
-                    sty.button
-                  )}
-                >
-                  {"SEND"}
-                </button>
               </div>
               <div
                 data-plasmic-name={"mapAndInfo"}
@@ -666,12 +703,12 @@ function PlasmicHomepage__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___2Tdd)}
-                  displayHeight={"auto"}
+                  displayHeight={"401px"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"75%"}
+                  displayMaxWidth={"559px"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
                     src: screenShot20230216At21855AMpngLa10StmJ,
@@ -715,28 +752,58 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
               <div className={classNames(projectcss.all, sty.column___5Pwxl)}>
-                <div
+                <a
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__kkIqq
+                    sty.link__zDzqa
                   )}
+                  href={`/about`}
                 >
-                  {
-                    "Learn More About Our Program\nLearn More About Our Products\nFeel Free To Contact Us Any Time"
-                  }
-                </div>
+                  {"Learn More About Our Program"}
+                </a>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__xv4Xj
+                  )}
+                  href={"#products"}
+                >
+                  {"Learn More About Our Products"}
+                </a>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__wSvid
+                  )}
+                  href={"#contact"}
+                >
+                  {"Feel Free To Contact Us Any Time"}
+                </a>
               </div>
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__osLj
-                  )}
-                >
-                  {"LOGO GOES HERE"}
-                </div>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__iyVwo)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"50%"}
+                  loading={"lazy"}
+                  src={{
+                    src: group1PngUT7LoZsTj,
+                    fullWidth: 727,
+                    fullHeight: 727,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
               <div className={classNames(projectcss.all, sty.column__yAycJ)}>
                 {(
@@ -798,7 +865,6 @@ const PlasmicDescendants = {
     "name",
     "email",
     "message",
-    "button",
     "mapAndInfo",
     "footer",
     "footerParentColumns"
@@ -861,7 +927,6 @@ const PlasmicDescendants = {
     "name",
     "email",
     "message",
-    "button",
     "mapAndInfo"
   ],
 
@@ -871,15 +936,13 @@ const PlasmicDescendants = {
     "name",
     "email",
     "message",
-    "button",
     "mapAndInfo"
   ],
 
-  contact2: ["contact2", "name", "email", "message", "button"],
+  contact2: ["contact2", "name", "email", "message"],
   name: ["name"],
   email: ["email"],
   message: ["message"],
-  button: ["button"],
   mapAndInfo: ["mapAndInfo"],
   footer: ["footer", "footerParentColumns"],
   footerParentColumns: ["footerParentColumns"]
@@ -941,7 +1004,6 @@ export const PlasmicHomepage = Object.assign(
     _name: makeNodeComponent("name"),
     email: makeNodeComponent("email"),
     message: makeNodeComponent("message"),
-    button: makeNodeComponent("button"),
     mapAndInfo: makeNodeComponent("mapAndInfo"),
     footer: makeNodeComponent("footer"),
     footerParentColumns: makeNodeComponent("footerParentColumns"),

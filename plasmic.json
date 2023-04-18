@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -38,7 +38,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
@@ -195,6 +196,86 @@
           "id": "g_aPlSAsg",
           "name": "DSC_1630 1.png",
           "filePath": "plasmic/rakija_site/images/dsc16301Png.png"
+        },
+        {
+          "id": "VanZLCh7Q",
+          "name": "vinogradi.jpg",
+          "filePath": "plasmic/rakija_site/images/vinogradijpg.jpg"
+        },
+        {
+          "id": "RGKDvQR0h",
+          "name": "Mask group.png",
+          "filePath": "plasmic/rakija_site/images/maskGrouppng.png"
+        },
+        {
+          "id": "YGL78tURl",
+          "name": "Mask group-1.png",
+          "filePath": "plasmic/rakija_site/images/maskGroup1Png.png"
+        },
+        {
+          "id": "rw2KSO6rh",
+          "name": "Mask group-3.png",
+          "filePath": "plasmic/rakija_site/images/maskGroup3Png.png"
+        },
+        {
+          "id": "DzvBQniNf",
+          "name": "Mask group-2.png",
+          "filePath": "plasmic/rakija_site/images/maskGroup2Png.png"
+        },
+        {
+          "id": "7t7nTCBTG",
+          "name": "Mask group-4.png",
+          "filePath": "plasmic/rakija_site/images/maskGroup4Png.png"
+        },
+        {
+          "id": "NTlqluXgu",
+          "name": "Mask group.png 2",
+          "filePath": "plasmic/rakija_site/images/maskGrouppng2.png"
+        },
+        {
+          "id": "gwXHtFlPg",
+          "name": "Mask group-1.png 2",
+          "filePath": "plasmic/rakija_site/images/maskGroup1Png2.png"
+        },
+        {
+          "id": "I9PPuApWk",
+          "name": "Mask group-3.png 2",
+          "filePath": "plasmic/rakija_site/images/maskGroup3Png2.png"
+        },
+        {
+          "id": "3NKERtvJw",
+          "name": "Mask group-2.png 2",
+          "filePath": "plasmic/rakija_site/images/maskGroup2Png2.png"
+        },
+        {
+          "id": "ltRLN4M9x",
+          "name": "Mask group-4.png 2",
+          "filePath": "plasmic/rakija_site/images/maskGroup4Png2.png"
+        },
+        {
+          "id": "mCeT7PGnv",
+          "name": "logo-gajic-destilerija-final.jpg",
+          "filePath": "plasmic/rakija_site/images/logoGajicDestilerijaFinaljpg.jpg"
+        },
+        {
+          "id": "uT7loZsTJ",
+          "name": "Group 1.png",
+          "filePath": "plasmic/rakija_site/images/group1Png.png"
+        },
+        {
+          "id": "HexPQppTs",
+          "name": "2023-04-05 21.50.09.jpg",
+          "filePath": "plasmic/rakija_site/images/_20230405215009Jpg.jpg"
+        },
+        {
+          "id": "fLnICaAkx",
+          "name": "h5-single-img-1a.jpeg",
+          "filePath": "plasmic/rakija_site/images/h5SingleImg1Ajpeg.jpg"
+        },
+        {
+          "id": "JsbTB20k1",
+          "name": "DSC_1636 2.jpg",
+          "filePath": "plasmic/rakija_site/images/dsc16362Jpg.jpg"
         }
       ],
       "indirect": false,
