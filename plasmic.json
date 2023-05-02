@@ -38,8 +38,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
@@ -87,6 +86,20 @@
           "cssFilePath": "plasmic/rakija_site/PlasmicAboutUs.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "mbxfJX-hy_g",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/rakija_site/PlasmicTextInput.jsx",
+          "importSpec": {
+            "modulePath": "TextInput.jsx"
+          },
+          "cssFilePath": "plasmic/rakija_site/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
         }
       ],
       "icons": [
@@ -99,6 +112,11 @@
           "id": "cuk0qwaJBss",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/rakija_site/icons/PlasmicIcon__Icon.jsx"
+        },
+        {
+          "id": "ywguHQ4EDwa",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/rakija_site/icons/PlasmicIcon__Searchsvg.jsx"
         }
       ],
       "images": [
@@ -276,6 +294,66 @@
           "id": "JsbTB20k1",
           "name": "DSC_1636 2.jpg",
           "filePath": "plasmic/rakija_site/images/dsc16362Jpg.jpg"
+        },
+        {
+          "id": "8zAWwQ4Ru",
+          "name": "DSC_1646.jpg",
+          "filePath": "plasmic/rakija_site/images/dsc1646Jpg.jpg"
+        },
+        {
+          "id": "617gpLiYL",
+          "name": "E57CB966-C3BE-46F3-9F33-F8E748920211_1_201_a.jpeg",
+          "filePath": "plasmic/rakija_site/images/e57Cb966C3Be46F39F33F8E7489202111201Ajpeg.png"
+        },
+        {
+          "id": "eeVRw_bQK",
+          "name": "DSC_1646.jpg 2",
+          "filePath": "plasmic/rakija_site/images/dsc1646Jpg2.jpg"
+        },
+        {
+          "id": "gGzGr9G23",
+          "name": "DSC_1646 4.jpg",
+          "filePath": "plasmic/rakija_site/images/dsc16464Jpg.jpg"
+        },
+        {
+          "id": "VqkJICHUw",
+          "name": "Y7XaPiAl.png",
+          "filePath": "plasmic/rakija_site/images/y7XaPiAlpng.png"
+        },
+        {
+          "id": "tWqr3duYV",
+          "name": "yb1Jpwhz.png",
+          "filePath": "plasmic/rakija_site/images/yb1Jpwhzpng.png"
+        },
+        {
+          "id": "QWMaTlyJY",
+          "name": "yb1Jpwhz.jpeg",
+          "filePath": "plasmic/rakija_site/images/yb1Jpwhzjpeg.jpg"
+        },
+        {
+          "id": "6jAtkof4R",
+          "name": "pwonNz6r.png",
+          "filePath": "plasmic/rakija_site/images/pwonNz6Rpng.png"
+        },
+        {
+          "id": "Z9JJW8sno",
+          "name": "7gyNvsfM.png",
+          "filePath": "plasmic/rakija_site/images/_7GyNvsfMpng.png"
+        },
+        {
+          "id": "PoXJDvYnW",
+          "name": "8xPK1D9z.png",
+          "filePath": "plasmic/rakija_site/images/_8XPk1D9Zpng.png"
+        },
+        {
+          "id": "a9mLmyOI1",
+          "name": "sjat-cover1.webp",
+          "filePath": "plasmic/rakija_site/images/sjatCover1Webp.webp"
+        },
+        {
+          "id": "pehGR7CeX",
+          "name": "sjat-cover1.webp 2",
+          "filePath": "plasmic/rakija_site/images/sjatCover1Webp2.webp"
         }
       ],
       "indirect": false,
@@ -305,6 +383,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.250",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.250/dist/plasmic.schema.json"
+  "cliVersion": "0.1.272",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
 }

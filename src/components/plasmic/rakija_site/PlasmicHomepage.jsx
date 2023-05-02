@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
+import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_rakija_site.module.css"; // plasmic-import: toir4xKH4aRMjXM9AUeVMJ/projectcss
@@ -31,7 +32,7 @@ import maskGroup1Png2GwXHtFlPg from "./images/maskGroup1Png2.png"; // plasmic-im
 import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-import: I9PPuApWk/picture
 import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
 import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
-import h5SingleImg1AjpegFLnICaAkx from "./images/h5SingleImg1Ajpeg.jpg"; // plasmic-import: fLnICaAkx/picture
+import _8XPk1D9ZpngPoXjDvYnW from "./images/_8XPk1D9Zpng.png"; // plasmic-import: PoXJDvYnW/picture
 import screenShot20230216At21855AMpngLa10StmJ from "./images/screenShot20230216At21855AMpng.png"; // plasmic-import: la10StmJ-/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
@@ -59,6 +60,32 @@ function PlasmicHomepage__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "textInput2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "textInput3.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      }
+    ],
+
+    [$props, $ctx]
+  );
+
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_7Ks1UnM646Mq()
   });
@@ -79,129 +106,129 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.parent
           )}
         >
-          <NavigationBar
-            data-plasmic-name={"navigationBar"}
-            data-plasmic-override={overrides.navigationBar}
-            brand={
-              <a
-                data-plasmic-name={"logoFillIn"}
-                data-plasmic-override={overrides.logoFillIn}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.logoFillIn
-                )}
-                href={"#"}
-              >
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__zt2Jq
-                  )}
-                  href={`/`}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__gA8Rw)}
-                    displayHeight={"40px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    src={{
-                      src: group1PngUT7LoZsTj,
-                      fullWidth: 727,
-                      fullHeight: 727,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </a>
-              </a>
-            }
-            className={classNames("__wab_instance", sty.navigationBar)}
-            closeButton={
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__esBvp)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                src={"https://static1.plasmic.app/close.svg"}
-              />
-            }
-            itemsGap={8}
-            menuItems={
-              <React.Fragment>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___8TRqF
-                  )}
-                  href={`/about`}
-                >
-                  {"O NAMA"}
-                </a>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__oI0EN
-                  )}
-                  href={"/#products"}
-                >
-                  {"PROIZVODI"}
-                </a>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___6OAh
-                  )}
-                  href={"#contact"}
-                >
-                  {"KONTAKT"}
-                </a>
-              </React.Fragment>
-            }
-            openButton={
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img___4Pd17)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                src={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? {
-                        src: vector1Png3127LsLhox,
-                        fullWidth: 45,
-                        fullHeight: 13,
-                        aspectRatio: undefined
-                      }
-                    : "https://static1.plasmic.app/menu.svg"
-                }
-              />
-            }
-            responsiveBreakpoint={768}
-          />
-
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
+            <NavigationBar
+              data-plasmic-name={"navigationBar"}
+              data-plasmic-override={overrides.navigationBar}
+              brand={
+                <a
+                  data-plasmic-name={"logoFillIn"}
+                  data-plasmic-override={overrides.logoFillIn}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.logoFillIn
+                  )}
+                  href={"#"}
+                >
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__zt2Jq
+                    )}
+                    href={`/`}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__gA8Rw)}
+                      displayHeight={"40px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      src={{
+                        src: group1PngUT7LoZsTj,
+                        fullWidth: 727,
+                        fullHeight: 727,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </a>
+                </a>
+              }
+              className={classNames("__wab_instance", sty.navigationBar)}
+              closeButton={
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__qC2Dr)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={"https://static1.plasmic.app/close.svg"}
+                />
+              }
+              itemsGap={8}
+              menuItems={
+                <React.Fragment>
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link___8TRqF
+                    )}
+                    href={`/about`}
+                  >
+                    {"O NAMA"}
+                  </a>
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__oI0EN
+                    )}
+                    href={"/#products"}
+                  >
+                    {"PROIZVODI"}
+                  </a>
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link___6OAh
+                    )}
+                    href={"#contact"}
+                  >
+                    {"KONTAKT"}
+                  </a>
+                </React.Fragment>
+              }
+              openButton={
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___4Pd17)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? {
+                          src: vector1Png3127LsLhox,
+                          fullWidth: 45,
+                          fullHeight: 13,
+                          aspectRatio: undefined
+                        }
+                      : "https://static1.plasmic.app/menu.svg"
+                  }
+                />
+              }
+              responsiveBreakpoint={768}
+            />
+
             <div
               data-plasmic-name={"gajicevaRakija"}
               data-plasmic-override={overrides.gajicevaRakija}
@@ -214,56 +241,63 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__q5LU0
                 )}
               >
-                {"GAJIĆEVA RAKIJA"}
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#B69760" }}
+                  >
+                    {"GAJIĆEVA"}
+                  </span>
+                </React.Fragment>
               </div>
-            </div>
-            <div
-              data-plasmic-name={"bottomText"}
-              data-plasmic-override={overrides.bottomText}
-              className={classNames(projectcss.all, sty.bottomText)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"socialsConvertToLinks"}
-                data-plasmic-override={overrides.socialsConvertToLinks}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  sty.socialsConvertToLinks
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__mDbMg
-                  )}
-                >
-                  {"IG."}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__h6K2J
-                  )}
-                >
-                  {"FB."}
-                </div>
-              </p.Stack>
               <div
-                data-plasmic-name={"scroll"}
-                data-plasmic-override={overrides.scroll}
-                className={classNames(projectcss.all, sty.scroll)}
+                data-plasmic-name={"bottomText"}
+                data-plasmic-override={overrides.bottomText}
+                className={classNames(projectcss.all, sty.bottomText)}
               >
-                <div
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"socialsConvertToLinks"}
+                  data-plasmic-override={overrides.socialsConvertToLinks}
+                  hasGap={true}
                   className={classNames(
                     projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__zvzR
+                    sty.socialsConvertToLinks
                   )}
                 >
-                  {"Scroll"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mDbMg
+                    )}
+                  >
+                    {"IG."}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__h6K2J
+                    )}
+                  >
+                    {"FB."}
+                  </div>
+                </p.Stack>
+                <div
+                  data-plasmic-name={"scroll"}
+                  data-plasmic-override={overrides.scroll}
+                  className={classNames(projectcss.all, sty.scroll)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zvzR
+                    )}
+                  >
+                    {"Scroll"}
+                  </div>
                 </div>
               </div>
             </div>
@@ -491,7 +525,11 @@ function PlasmicHomepage__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.column__ecCnG)} />
             </p.Stack>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__sMvi8)}>
+          <div
+            data-plasmic-name={"whereCanYouTasteProdcuts"}
+            data-plasmic-override={overrides.whereCanYouTasteProdcuts}
+            className={classNames(projectcss.all, sty.whereCanYouTasteProdcuts)}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__jsxsB)}>
               <div
                 className={classNames(
@@ -543,7 +581,11 @@ function PlasmicHomepage__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img___7TgH)}
-                      displayHeight={"768px"}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "auto"
+                          : "768px"
+                      }
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
@@ -551,7 +593,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       displayWidth={"552px"}
                       loading={"lazy"}
                       src={{
-                        src: h5SingleImg1AjpegFLnICaAkx,
+                        src: _8XPk1D9ZpngPoXjDvYnW,
                         fullWidth: 978,
                         fullHeight: 1100,
                         aspectRatio: undefined
@@ -638,51 +680,57 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     {"GET IN TOUCH"}
                   </div>
-                  <div
-                    data-plasmic-name={"name"}
-                    data-plasmic-override={overrides.name}
-                    className={classNames(projectcss.all, sty.name)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zqb30
-                      )}
-                    >
-                      {"FULL NAME*"}
-                    </div>
-                  </div>
-                  <div
-                    data-plasmic-name={"email"}
-                    data-plasmic-override={overrides.email}
-                    className={classNames(projectcss.all, sty.email)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__yG8Iz
-                      )}
-                    >
-                      {"EMAIL*"}
-                    </div>
-                  </div>
-                  <div
-                    data-plasmic-name={"message"}
-                    data-plasmic-override={overrides.message}
-                    className={classNames(projectcss.all, sty.message)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gBmVx
-                      )}
-                    >
-                      {"MESSAGE*"}
-                    </div>
-                  </div>
+                  <TextInput
+                    data-plasmic-name={"textInput"}
+                    data-plasmic-override={overrides.textInput}
+                    className={classNames("__wab_instance", sty.textInput)}
+                    onChange={(...eventArgs) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput",
+                        "value"
+                      ])((e => e.target?.value).apply(null, eventArgs));
+                    }}
+                    placeholder={"Name*"}
+                    value={p.generateStateValueProp($state, [
+                      "textInput",
+                      "value"
+                    ])}
+                  />
+
+                  <TextInput
+                    data-plasmic-name={"textInput2"}
+                    data-plasmic-override={overrides.textInput2}
+                    className={classNames("__wab_instance", sty.textInput2)}
+                    onChange={(...eventArgs) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput2",
+                        "value"
+                      ])((e => e.target?.value).apply(null, eventArgs));
+                    }}
+                    placeholder={"Email*"}
+                    value={p.generateStateValueProp($state, [
+                      "textInput2",
+                      "value"
+                    ])}
+                  />
+
+                  <TextInput
+                    data-plasmic-name={"textInput3"}
+                    data-plasmic-override={overrides.textInput3}
+                    className={classNames("__wab_instance", sty.textInput3)}
+                    onChange={(...eventArgs) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput3",
+                        "value"
+                      ])((e => e.target?.value).apply(null, eventArgs));
+                    }}
+                    placeholder={"Message*"}
+                    value={p.generateStateValueProp($state, [
+                      "textInput3",
+                      "value"
+                    ])}
+                  />
+
                   <button
                     className={classNames(
                       projectcss.all,
@@ -788,8 +836,10 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
                 <p.PlasmicImg
+                  data-plasmic-name={"logo"}
+                  data-plasmic-override={overrides.logo}
                   alt={""}
-                  className={classNames(sty.img__iyVwo)}
+                  className={classNames(sty.logo)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -842,9 +892,9 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   parent: [
     "parent",
+    "hero",
     "navigationBar",
     "logoFillIn",
-    "hero",
     "gajicevaRakija",
     "bottomText",
     "socialsConvertToLinks",
@@ -855,6 +905,7 @@ const PlasmicDescendants = {
     "two2",
     "three",
     "two",
+    "whereCanYouTasteProdcuts",
     "discover",
     "discoverColumns",
     "mapNeedToFindBetterMap",
@@ -862,25 +913,34 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
-    "name",
-    "email",
-    "message",
+    "textInput",
+    "textInput2",
+    "textInput3",
     "mapAndInfo",
     "footer",
-    "footerParentColumns"
+    "footerParentColumns",
+    "logo"
   ],
 
-  navigationBar: ["navigationBar", "logoFillIn"],
-  logoFillIn: ["logoFillIn"],
   hero: [
     "hero",
+    "navigationBar",
+    "logoFillIn",
     "gajicevaRakija",
     "bottomText",
     "socialsConvertToLinks",
     "scroll"
   ],
 
-  gajicevaRakija: ["gajicevaRakija"],
+  navigationBar: ["navigationBar", "logoFillIn"],
+  logoFillIn: ["logoFillIn"],
+  gajicevaRakija: [
+    "gajicevaRakija",
+    "bottomText",
+    "socialsConvertToLinks",
+    "scroll"
+  ],
+
   bottomText: ["bottomText", "socialsConvertToLinks", "scroll"],
   socialsConvertToLinks: ["socialsConvertToLinks"],
   scroll: ["scroll"],
@@ -905,6 +965,7 @@ const PlasmicDescendants = {
   two2: ["two2"],
   three: ["three"],
   two: ["two"],
+  whereCanYouTasteProdcuts: ["whereCanYouTasteProdcuts"],
   discover: [
     "discover",
     "discoverColumns",
@@ -924,28 +985,29 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
-    "name",
-    "email",
-    "message",
+    "textInput",
+    "textInput2",
+    "textInput3",
     "mapAndInfo"
   ],
 
   contactParent: [
     "contactParent",
     "contact2",
-    "name",
-    "email",
-    "message",
+    "textInput",
+    "textInput2",
+    "textInput3",
     "mapAndInfo"
   ],
 
-  contact2: ["contact2", "name", "email", "message"],
-  name: ["name"],
-  email: ["email"],
-  message: ["message"],
+  contact2: ["contact2", "textInput", "textInput2", "textInput3"],
+  textInput: ["textInput"],
+  textInput2: ["textInput2"],
+  textInput3: ["textInput3"],
   mapAndInfo: ["mapAndInfo"],
-  footer: ["footer", "footerParentColumns"],
-  footerParentColumns: ["footerParentColumns"]
+  footer: ["footer", "footerParentColumns", "logo"],
+  footerParentColumns: ["footerParentColumns", "logo"],
+  logo: ["logo"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -981,9 +1043,9 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("parent"),
   {
     // Helper components rendering sub-elements
+    hero: makeNodeComponent("hero"),
     navigationBar: makeNodeComponent("navigationBar"),
     logoFillIn: makeNodeComponent("logoFillIn"),
-    hero: makeNodeComponent("hero"),
     gajicevaRakija: makeNodeComponent("gajicevaRakija"),
     bottomText: makeNodeComponent("bottomText"),
     socialsConvertToLinks: makeNodeComponent("socialsConvertToLinks"),
@@ -994,6 +1056,7 @@ export const PlasmicHomepage = Object.assign(
     two2: makeNodeComponent("two2"),
     three: makeNodeComponent("three"),
     two: makeNodeComponent("two"),
+    whereCanYouTasteProdcuts: makeNodeComponent("whereCanYouTasteProdcuts"),
     discover: makeNodeComponent("discover"),
     discoverColumns: makeNodeComponent("discoverColumns"),
     mapNeedToFindBetterMap: makeNodeComponent("mapNeedToFindBetterMap"),
@@ -1001,12 +1064,13 @@ export const PlasmicHomepage = Object.assign(
     contact: makeNodeComponent("contact"),
     contactParent: makeNodeComponent("contactParent"),
     contact2: makeNodeComponent("contact2"),
-    _name: makeNodeComponent("name"),
-    email: makeNodeComponent("email"),
-    message: makeNodeComponent("message"),
+    textInput: makeNodeComponent("textInput"),
+    textInput2: makeNodeComponent("textInput2"),
+    textInput3: makeNodeComponent("textInput3"),
     mapAndInfo: makeNodeComponent("mapAndInfo"),
     footer: makeNodeComponent("footer"),
     footerParentColumns: makeNodeComponent("footerParentColumns"),
+    logo: makeNodeComponent("logo"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
