@@ -57,13 +57,13 @@
 .img___6Sw2M > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.img__uj9LY {
+.img__wzzOx {
   object-fit: cover;
 }
-.img__uj9LY > picture > img {
+.img__wzzOx > picture > img {
   object-fit: cover;
 }
-.img__uj9LY > :global(.__wab_img-spacer) > img {
+.img__wzzOx > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .link__a0QOl {
@@ -162,7 +162,7 @@
   .text__ub0Ec {
     width: 100%;
     min-width: 0;
-    padding: 8px;
+    padding: 0px 30px;
   }
 }
 .h4 {
@@ -181,11 +181,16 @@
   min-width: 0;
   padding: 8px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__h2SSy {
+    padding: 0px 30px;
+  }
+}
 .img___0ZyCv {
   position: relative;
   object-fit: cover;
   max-width: 70%;
-  border-radius: 35px;
+  border-radius: 0px;
 }
 .img___0ZyCv > picture > img {
   object-fit: cover;
@@ -210,6 +215,12 @@
   background: #000000;
   min-width: 0;
   padding: 40px 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .footerParentColumns {
   display: flex;
@@ -261,6 +272,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .column__fSrl1 {
     padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .link__jPaWk {
@@ -275,6 +288,12 @@
   font-family: "Lato", sans-serif;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__jPaWk {
+    text-align: center;
+    padding: 0px 0px 10px;
+  }
+}
 .link__cMla7 {
   position: relative;
   width: 100%;
@@ -287,6 +306,12 @@
   font-family: "Lato", sans-serif;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__cMla7 {
+    text-align: center;
+    padding: 0px 0px 10px;
+  }
+}
 .link__oohY {
   position: relative;
   width: 100%;
@@ -297,6 +322,12 @@
   font-weight: 300;
   font-family: "Lato", sans-serif;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__oohY {
+    text-align: center;
+    padding: 0px;
+  }
 }
 .column___5JhtC {
   display: flex;
@@ -309,6 +340,11 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .column___5JhtC {
+    padding: 50px 0px;
+  }
 }
 .img__b2UNq {
   position: relative;
@@ -354,6 +390,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text__t7UEv {
     text-align: center;
+    padding-bottom: 10px;
     display: block;
   }
 }
@@ -372,5 +409,6 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text___1Es0I {
     text-align: center;
+    line-height: 1.5;
   }
 }

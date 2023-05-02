@@ -117,7 +117,7 @@ function PlasmicAboutUs__RenderFunc(props) {
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__uj9LY)}
+                className={classNames(sty.img__wzzOx)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -208,38 +208,107 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.text__ub0Ec
                   )}
                 >
-                  <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <h4
-                        data-plasmic-name={"h4"}
-                        data-plasmic-override={overrides.h4}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4
-                        )}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#AC8D5B" }}
-                          >
-                            {"LOREM IPSUM DOLOR"}
-                          </span>
-                        </React.Fragment>
-                      </h4>
-                    }
-
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                     <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
                       {
-                        "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
+                        <h4
+                          data-plasmic-name={"h4"}
+                          data-plasmic-override={overrides.h4}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h4,
+                            projectcss.__wab_text,
+                            sty.h4
+                          )}
+                        >
+                          {hasVariant(
+                            globalVariants,
+                            "screen",
+                            "mobileOnly"
+                          ) ? (
+                            <React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ color: "#AC8D5B" }}
+                              >
+                                {"LOREM IPSUM DOLOR"}
+                              </span>
+                            </React.Fragment>
+                          ) : (
+                            <React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ color: "#AC8D5B" }}
+                              >
+                                {"LOREM IPSUM DOLOR"}
+                              </span>
+                            </React.Fragment>
+                          )}
+                        </h4>
                       }
+
+                      <React.Fragment>
+                        {
+                          "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
+                        }
+                      </React.Fragment>
                     </React.Fragment>
-                  </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <h4
+                          data-plasmic-name={"h4"}
+                          data-plasmic-override={overrides.h4}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h4,
+                            projectcss.__wab_text,
+                            sty.h4
+                          )}
+                        >
+                          {hasVariant(
+                            globalVariants,
+                            "screen",
+                            "mobileOnly"
+                          ) ? (
+                            <React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ color: "#AC8D5B" }}
+                              >
+                                {"LOREM IPSUM DOLOR"}
+                              </span>
+                            </React.Fragment>
+                          ) : (
+                            <React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ color: "#AC8D5B" }}
+                              >
+                                {"LOREM IPSUM DOLOR"}
+                              </span>
+                            </React.Fragment>
+                          )}
+                        </h4>
+                      }
+
+                      <React.Fragment>
+                        {
+                          "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  )}
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__h2SSy)}>
