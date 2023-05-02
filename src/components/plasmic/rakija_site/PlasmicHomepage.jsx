@@ -19,6 +19,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
@@ -516,33 +517,45 @@ function PlasmicHomepage__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.column__ecCnG)} />
             </p.Stack>
           </div>
-          <div
-            data-plasmic-name={"whereCanYouTasteProdcuts"}
-            data-plasmic-override={overrides.whereCanYouTasteProdcuts}
-            className={classNames(projectcss.all, sty.whereCanYouTasteProdcuts)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__jsxsB)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__d1Ukt
-                )}
-              >
-                {""}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__pJg7O
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "Rakija \nkao stil života"
-                  : "RAKIJA PRAVLJENA ZA DUŠU"}
-              </div>
+          <div className={classNames(projectcss.all, sty.freeBox__g8Ao6)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__pJg7O
+              )}
+            >
+              {hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "Rakija \nkao stil života"
+                : "RAKIJA PRAVLJENA ZA DUŠU..."}
             </div>
+            <ParallaxWrapper
+              data-plasmic-name={"scrollParallax"}
+              data-plasmic-override={overrides.scrollParallax}
+              className={classNames("__wab_instance", sty.scrollParallax)}
+              speed={40}
+            >
+              <div
+                data-plasmic-name={"whereCanYouTasteProdcuts"}
+                data-plasmic-override={overrides.whereCanYouTasteProdcuts}
+                className={classNames(
+                  projectcss.all,
+                  sty.whereCanYouTasteProdcuts
+                )}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__jsxsB)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__d1Ukt
+                    )}
+                  >
+                    {""}
+                  </div>
+                </div>
+              </div>
+            </ParallaxWrapper>
           </div>
           <div
             data-plasmic-name={"discover"}
@@ -832,10 +845,19 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__gHnb
                   )}
                 >
-                  {
-                    "Školska 73, Aleksandrovac 37230, Serbia gajicevarakija@gmail.com"
-                  }
+                  {"Školska 73, Aleksandrovac 37230, Serbia "}
                 </div>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__f9Lq
+                  )}
+                  href={"mailto:'gajiceva@gmai.com"}
+                >
+                  {"gajicevarakija@gmail.com"}
+                </a>
               </div>
             </div>
           </div>
@@ -861,6 +883,7 @@ const PlasmicDescendants = {
     "two2",
     "three",
     "two",
+    "scrollParallax",
     "whereCanYouTasteProdcuts",
     "discover",
     "discoverColumns",
@@ -921,6 +944,7 @@ const PlasmicDescendants = {
   two2: ["two2"],
   three: ["three"],
   two: ["two"],
+  scrollParallax: ["scrollParallax", "whereCanYouTasteProdcuts"],
   whereCanYouTasteProdcuts: ["whereCanYouTasteProdcuts"],
   discover: [
     "discover",
@@ -1012,6 +1036,7 @@ export const PlasmicHomepage = Object.assign(
     two2: makeNodeComponent("two2"),
     three: makeNodeComponent("three"),
     two: makeNodeComponent("two"),
+    scrollParallax: makeNodeComponent("scrollParallax"),
     whereCanYouTasteProdcuts: makeNodeComponent("whereCanYouTasteProdcuts"),
     discover: makeNodeComponent("discover"),
     discoverColumns: makeNodeComponent("discoverColumns"),
