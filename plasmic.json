@@ -38,12 +38,13 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
       "projectApiToken": "uOrnFmpE7oKe2htbhnZm9fxysbkB82lr46ksY5Ya3hVGNa0kUf9pNYDgwSEps6XpKiBzjDtO8Gppym47gBng",
-      "projectName": "Rakija Site",
+      "projectName": "Gajiceva",
       "version": "latest",
       "cssFilePath": "plasmic/rakija_site/plasmic_rakija_site.module.css",
       "components": [
@@ -354,10 +355,15 @@
           "id": "pehGR7CeX",
           "name": "sjat-cover1.webp 2",
           "filePath": "plasmic/rakija_site/images/sjatCover1Webp2.webp"
+        },
+        {
+          "id": "czlxPqp1M",
+          "name": "Statistical_regions_of_Serbia_NUTS_1.png",
+          "filePath": "plasmic/gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/gajiceva/PlasmicGlobalContextsProvider.jsx",
       "codeComponents": [
         {
           "id": "iQJZxOmZHE",
@@ -368,6 +374,54 @@
           "id": "UVHhYDXtcJ",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": "4.13.0",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.jsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        }
+      ]
+    },
+    {
+      "projectId": "YUiM7yqBWAqsh8KSnrdj7",
+      "projectApiToken": "yLKpJOE8mD6HqoNCSWF3Em8ut0LBzL7qb3QPqNeOLPjQsSBSc12yhYovnSRSekzgt1xjjbugBGDjOMLGMK4w",
+      "projectName": "plasmic-query",
+      "version": "0.15.0",
+      "cssFilePath": "plasmic/plasmic_query/plasmic_plasmic_query.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "ae7V86eNoXA",
+          "name": "DataFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        },
+        {
+          "id": "0DrxdjD45dkx",
+          "name": "GraphqlFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
       ]
     }
