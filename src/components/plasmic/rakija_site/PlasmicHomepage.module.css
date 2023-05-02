@@ -240,15 +240,6 @@
   min-width: 0;
   padding: 8px 8px 60px 46px;
 }
-.text__mDbMg {
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 800px;
-  color: #ac8d5b;
-  font-size: 20px;
-  font-family: "Belleza", sans-serif;
-}
 .text__h6K2J {
   position: relative;
   width: auto;
@@ -1249,7 +1240,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .footer {
     height: auto;
-    padding: 150px 0px;
+    padding: 2px 0px 17px;
   }
 }
 .footerParentColumns {

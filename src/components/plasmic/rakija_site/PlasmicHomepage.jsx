@@ -269,19 +269,10 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__mDbMg
-                    )}
-                  >
-                    {"IG."}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
                       sty.text__h6K2J
                     )}
                   >
-                    {"FB."}
+                    {""}
                   </div>
                 </p.Stack>
                 <div
@@ -346,7 +337,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__emYuc
                   )}
                 >
-                  {"PRODUCT ONE"}
+                  {"Vilijamovka"}
                 </div>
                 <div
                   className={classNames(
@@ -355,7 +346,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__sLjr
                   )}
                 >
-                  {"Lorem ipsum dolor sit amet consec"}
+                  {""}
                 </div>
               </div>
               <div
@@ -388,7 +379,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__mDyRx
                   )}
                 >
-                  {"PRODUCT TWO"}
+                  {"Kajsija"}
                 </div>
                 <div
                   className={classNames(
@@ -397,7 +388,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__y5Bt
                   )}
                 >
-                  {"Lorem ipsum dolor sit amet consec"}
+                  {""}
                 </div>
               </div>
               <div
@@ -430,7 +421,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text___8Lj7J
                   )}
                 >
-                  {"PRODUCT THREE"}
+                  {"Šljiva"}
                 </div>
                 <div
                   className={classNames(
@@ -439,7 +430,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__gjNo5
                   )}
                 >
-                  {"Lorem ipsum dolor sit amet consec"}
+                  {""}
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__lFbxd)}>
@@ -468,7 +459,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__enwzS
                   )}
                 >
-                  {"PRODUCT FOUR"}
+                  {"Dunja"}
                 </div>
                 <div
                   className={classNames(
@@ -477,7 +468,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__hjPbv
                   )}
                 >
-                  {"Lorem ipsum dolor sit amet consec"}
+                  {""}
                 </div>
               </div>
               <div
@@ -510,7 +501,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__trstz
                   )}
                 >
-                  {"PRODUCT FIVE"}
+                  {"Loza"}
                 </div>
                 <div
                   className={classNames(
@@ -519,7 +510,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__qCmCz
                   )}
                 >
-                  {"Lorem ipsum dolor sit amet consec"}
+                  {""}
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__ecCnG)} />
@@ -667,7 +658,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__c2C25
                     )}
                   >
-                    {"Kontaktirajte Nas"}
+                    {"Kako do nas?"}
                   </div>
                   {true ? (
                     <div
