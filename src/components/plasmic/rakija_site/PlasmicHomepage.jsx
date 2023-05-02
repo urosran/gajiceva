@@ -32,7 +32,7 @@ import maskGroup1Png2GwXHtFlPg from "./images/maskGroup1Png2.png"; // plasmic-im
 import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-import: I9PPuApWk/picture
 import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
 import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
-import _8XPk1D9ZpngPoXjDvYnW from "./images/_8XPk1D9Zpng.png"; // plasmic-import: PoXJDvYnW/picture
+import statisticalRegionsOfSerbiaNuts1PngCzlxPqp1M from "../gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"; // plasmic-import: czlxPqp1M/picture
 import screenShot20230216At21855AMpngLa10StmJ from "./images/screenShot20230216At21855AMpng.png"; // plasmic-import: la10StmJ-/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
@@ -538,7 +538,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__d1Ukt
                 )}
               >
-                {"LOREM IPSUM DOLOR"}
+                {""}
               </div>
               <div
                 className={classNames(
@@ -547,7 +547,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__pJg7O
                 )}
               >
-                {"QUIS  RISUS SED VULPUTATE ODIO UT?"}
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Rakija \nkao stil života"
+                  : "RAKIJA PRAVLJENA ZA DUŠU"}
               </div>
             </div>
           </div>
@@ -593,9 +595,9 @@ function PlasmicHomepage__RenderFunc(props) {
                       displayWidth={"552px"}
                       loading={"lazy"}
                       src={{
-                        src: _8XPk1D9ZpngPoXjDvYnW,
-                        fullWidth: 978,
-                        fullHeight: 1100,
+                        src: statisticalRegionsOfSerbiaNuts1PngCzlxPqp1M,
+                        fullWidth: 744,
+                        fullHeight: 1052,
                         aspectRatio: undefined
                       }}
                     />
@@ -611,7 +613,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__hQa9R
                     )}
                   >
-                    {"LOREM IPSUM DOLOR"}
+                    {"REGION RAKIJA I VINA"}
                   </div>
                 ) : null}
                 <div
@@ -621,9 +623,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__iAn7U
                   )}
                 >
-                  {
-                    "NAPA VALLEY IS THE MOST\nFAMOUS WINEMAKING REGION IN PIEMONTE REGION"
-                  }
+                  {"ALEKSANDROVAČKI REGION JE NAJPOZNATIJI PO VINARIJAMA"}
                 </div>
                 <Button
                   className={classNames("__wab_instance", sty.button__vjkIk)}
@@ -635,7 +635,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__d2Ob
                     )}
                   >
-                    {"DISCOVER"}
+                    {"VISE"}
                   </div>
                 </Button>
               </div>
@@ -660,6 +660,15 @@ function PlasmicHomepage__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.contact2)}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__qbhZ2)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__c2C25
+                    )}
+                  >
+                    {"Kontaktirajte Nas"}
+                  </div>
                   {true ? (
                     <div
                       className={classNames(
@@ -668,18 +677,9 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.text__ubJh8
                       )}
                     >
-                      {"LOREM IPSUM DOLOR"}
+                      {""}
                     </div>
                   ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__c2C25
-                    )}
-                  >
-                    {"GET IN TOUCH"}
-                  </div>
                   <TextInput
                     data-plasmic-name={"textInput"}
                     data-plasmic-override={overrides.textInput}
@@ -739,7 +739,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.button__kMYcu
                     )}
                   >
-                    {"SEND"}
+                    {"POŠALJI"}
                   </button>
                 </div>
               </div>
@@ -766,26 +766,23 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                 />
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__mAo3P
-                  )}
-                >
-                  {"CONTACT INFO"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__lWotf
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Street Address, Belgrade\n+123 456 9\nexample@gmail.com"
-                    : "Street Address, Belgrade | +123 456 9 | example@gmail.com"}
-                </div>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lWotf
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Street Address, Belgrade\n+123 456 9\nexample@gmail.com"
+                      : ""}
+                  </div>
+                ) : null}
               </div>
             </p.Stack>
           </div>
@@ -799,41 +796,7 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-override={overrides.footerParentColumns}
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
-              <div className={classNames(projectcss.all, sty.column___5Pwxl)}>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__zDzqa
-                  )}
-                  href={`/about`}
-                >
-                  {"Learn More About Our Program"}
-                </a>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__xv4Xj
-                  )}
-                  href={"#products"}
-                >
-                  {"Learn More About Our Products"}
-                </a>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__wSvid
-                  )}
-                  href={"#contact"}
-                >
-                  {"Feel Free To Contact Us Any Time"}
-                </a>
-              </div>
+              <div className={classNames(projectcss.all, sty.column___5Pwxl)} />
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
                 <p.PlasmicImg
                   data-plasmic-name={"logo"}
@@ -868,7 +831,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text___7JGt
                     )}
                   >
-                    {"CONTACT "}
+                    {"KONTAKT"}
                   </div>
                 ) : null}
                 <div
@@ -878,7 +841,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__gHnb
                   )}
                 >
-                  {"Street Address, Belgrade\n+123 456 9\nexample@gmail.com"}
+                  {
+                    "Školska 73, Aleksandrovac 37230, Serbia gajicevarakija@gmail.com"
+                  }
                 </div>
               </div>
             </div>

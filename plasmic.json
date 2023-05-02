@@ -38,12 +38,13 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
       "projectApiToken": "uOrnFmpE7oKe2htbhnZm9fxysbkB82lr46ksY5Ya3hVGNa0kUf9pNYDgwSEps6XpKiBzjDtO8Gppym47gBng",
-      "projectName": "Rakija Site",
+      "projectName": "Gajiceva",
       "version": "latest",
       "cssFilePath": "plasmic/rakija_site/plasmic_rakija_site.module.css",
       "components": [
@@ -354,6 +355,11 @@
           "id": "pehGR7CeX",
           "name": "sjat-cover1.webp 2",
           "filePath": "plasmic/rakija_site/images/sjatCover1Webp2.webp"
+        },
+        {
+          "id": "czlxPqp1M",
+          "name": "Statistical_regions_of_Serbia_NUTS_1.png",
+          "filePath": "plasmic/gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"
         }
       ],
       "indirect": false,
