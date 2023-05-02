@@ -19,7 +19,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
-import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
@@ -517,45 +516,30 @@ function PlasmicHomepage__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.column__ecCnG)} />
             </p.Stack>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__g8Ao6)}>
+          <div
+            data-plasmic-name={"whereCanYouTasteProdcuts"}
+            data-plasmic-override={overrides.whereCanYouTasteProdcuts}
+            className={classNames(projectcss.all, sty.whereCanYouTasteProdcuts)}
+          >
             <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__pJg7O
-              )}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "Rakija \nkao stil života"
-                : "RAKIJA PRAVLJENA ZA DUŠU..."}
-            </div>
-            <ParallaxWrapper
-              data-plasmic-name={"scrollParallax"}
-              data-plasmic-override={overrides.scrollParallax}
-              className={classNames("__wab_instance", sty.scrollParallax)}
-              speed={40}
-            >
-              <div
-                data-plasmic-name={"whereCanYouTasteProdcuts"}
-                data-plasmic-override={overrides.whereCanYouTasteProdcuts}
-                className={classNames(
-                  projectcss.all,
-                  sty.whereCanYouTasteProdcuts
-                )}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__jsxsB)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__d1Ukt
-                    )}
-                  >
-                    {""}
-                  </div>
+              <div className={classNames(projectcss.all, sty.column___7AnKr)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__pJg7O
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "Rakija \nkao stil života"
+                    : "RAKIJA PRAVLJENA ZA DUŠU..."}
                 </div>
               </div>
-            </ParallaxWrapper>
+            </div>
           </div>
           <div
             data-plasmic-name={"discover"}
@@ -663,7 +647,11 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.contact2}
                 className={classNames(projectcss.all, sty.contact2)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__qbhZ2)}>
+                <div
+                  data-plasmic-name={"freeBox"}
+                  data-plasmic-override={overrides.freeBox}
+                  className={classNames(projectcss.all, sty.freeBox)}
+                >
                   <div
                     className={classNames(
                       projectcss.all,
@@ -694,7 +682,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         "value"
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
-                    placeholder={"Name*"}
+                    placeholder={"Ime*"}
                     value={p.generateStateValueProp($state, [
                       "textInput",
                       "value"
@@ -800,7 +788,17 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-override={overrides.footerParentColumns}
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
-              <div className={classNames(projectcss.all, sty.column___5Pwxl)} />
+              <div className={classNames(projectcss.all, sty.column___5Pwxl)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rt2AI
+                  )}
+                >
+                  {""}
+                </div>
+              </div>
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
                 <p.PlasmicImg
                   data-plasmic-name={"logo"}
@@ -883,8 +881,8 @@ const PlasmicDescendants = {
     "two2",
     "three",
     "two",
-    "scrollParallax",
     "whereCanYouTasteProdcuts",
+    "columns",
     "discover",
     "discoverColumns",
     "mapNeedToFindBetterMap",
@@ -892,6 +890,7 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
+    "freeBox",
     "textInput",
     "textInput2",
     "textInput3",
@@ -944,8 +943,8 @@ const PlasmicDescendants = {
   two2: ["two2"],
   three: ["three"],
   two: ["two"],
-  scrollParallax: ["scrollParallax", "whereCanYouTasteProdcuts"],
-  whereCanYouTasteProdcuts: ["whereCanYouTasteProdcuts"],
+  whereCanYouTasteProdcuts: ["whereCanYouTasteProdcuts", "columns"],
+  columns: ["columns"],
   discover: [
     "discover",
     "discoverColumns",
@@ -965,6 +964,7 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
+    "freeBox",
     "textInput",
     "textInput2",
     "textInput3",
@@ -974,13 +974,15 @@ const PlasmicDescendants = {
   contactParent: [
     "contactParent",
     "contact2",
+    "freeBox",
     "textInput",
     "textInput2",
     "textInput3",
     "mapAndInfo"
   ],
 
-  contact2: ["contact2", "textInput", "textInput2", "textInput3"],
+  contact2: ["contact2", "freeBox", "textInput", "textInput2", "textInput3"],
+  freeBox: ["freeBox", "textInput", "textInput2", "textInput3"],
   textInput: ["textInput"],
   textInput2: ["textInput2"],
   textInput3: ["textInput3"],
@@ -1036,8 +1038,8 @@ export const PlasmicHomepage = Object.assign(
     two2: makeNodeComponent("two2"),
     three: makeNodeComponent("three"),
     two: makeNodeComponent("two"),
-    scrollParallax: makeNodeComponent("scrollParallax"),
     whereCanYouTasteProdcuts: makeNodeComponent("whereCanYouTasteProdcuts"),
+    columns: makeNodeComponent("columns"),
     discover: makeNodeComponent("discover"),
     discoverColumns: makeNodeComponent("discoverColumns"),
     mapNeedToFindBetterMap: makeNodeComponent("mapNeedToFindBetterMap"),
@@ -1045,6 +1047,7 @@ export const PlasmicHomepage = Object.assign(
     contact: makeNodeComponent("contact"),
     contactParent: makeNodeComponent("contactParent"),
     contact2: makeNodeComponent("contact2"),
+    freeBox: makeNodeComponent("freeBox"),
     textInput: makeNodeComponent("textInput"),
     textInput2: makeNodeComponent("textInput2"),
     textInput3: makeNodeComponent("textInput3"),
