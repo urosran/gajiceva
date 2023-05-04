@@ -176,7 +176,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link___8TRqF
                     )}
-                    href={"/about"}
+                    href={`/about`}
                   >
                     {"O NAMA"}
                   </a>
@@ -345,15 +345,23 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.one}
                 className={classNames(projectcss.all, sty.one)}
               >
-                <BottleComponent
+                <a
                   className={classNames(
-                    "__wab_instance",
-                    sty.bottleComponent___4AkXa
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___4ZFoJ
                   )}
-                  link={`/Vilijamovka`}
+                  href={`/Vilijamovka`}
                 >
-                  {"Vilijamovka"}
-                </BottleComponent>
+                  <BottleComponent
+                    className={classNames(
+                      "__wab_instance",
+                      sty.bottleComponent___4AkXa
+                    )}
+                  >
+                    {"Vilijamovka"}
+                  </BottleComponent>
+                </a>
               </div>
               <div
                 data-plasmic-name={"one2"}
