@@ -19,6 +19,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import BottleComponent from "../../BottleComponent"; // plasmic-import: Ay49hDZCzV/component
 import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
@@ -27,7 +28,6 @@ import projectcss from "./plasmic_rakija_site.module.css"; // plasmic-import: to
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: -NFrkmsG80gR/css
 import group1PngUT7LoZsTj from "./images/group1Png.png"; // plasmic-import: uT7loZsTJ/picture
 import vector1Png3127LsLhox from "./images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
-import maskGrouppng2NTlqluXgu from "./images/maskGrouppng2.png"; // plasmic-import: NTlqluXgu/picture
 import maskGroup1Png2GwXHtFlPg from "./images/maskGroup1Png2.png"; // plasmic-import: gwXHtFlPg/picture
 import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-import: I9PPuApWk/picture
 import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
@@ -250,46 +250,74 @@ function PlasmicHomepage__RenderFunc(props) {
                   </span>
                 </React.Fragment>
               </div>
-              <div
-                data-plasmic-name={"bottomText"}
-                data-plasmic-override={overrides.bottomText}
-                className={classNames(projectcss.all, sty.bottomText)}
-              >
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"socialsConvertToLinks"}
-                  data-plasmic-override={overrides.socialsConvertToLinks}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.socialsConvertToLinks
-                  )}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__h6K2J
-                    )}
-                  >
-                    {""}
-                  </div>
-                </p.Stack>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
                 <div
-                  data-plasmic-name={"scroll"}
-                  data-plasmic-override={overrides.scroll}
-                  className={classNames(projectcss.all, sty.scroll)}
+                  data-plasmic-name={"bottomText"}
+                  data-plasmic-override={overrides.bottomText}
+                  className={classNames(projectcss.all, sty.bottomText)}
                 >
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"socialsConvertToLinks"}
+                      data-plasmic-override={overrides.socialsConvertToLinks}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.socialsConvertToLinks
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__h6K2J
+                        )}
+                      >
+                        {""}
+                      </div>
+                    </p.Stack>
+                  ) : null}
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__zvzR
-                    )}
+                    data-plasmic-name={"scroll"}
+                    data-plasmic-override={overrides.scroll}
+                    className={classNames(projectcss.all, sty.scroll)}
                   >
-                    {"Scroll"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__zvzR
+                      )}
+                    >
+                      {"Scroll"}
+                    </div>
                   </div>
                 </div>
+              ) : null}
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__nUhsR)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__yr3Wg
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"Scroll"}
+                  </span>
+                </React.Fragment>
               </div>
             </div>
           </div>
@@ -306,239 +334,127 @@ function PlasmicHomepage__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.productsColumnsParent)}
             >
-              <div className={classNames(projectcss.all, sty.column__vzsTu)} />
+              <div
+                data-plasmic-name={"one6"}
+                data-plasmic-override={overrides.one6}
+                className={classNames(projectcss.all, sty.one6)}
+              />
+
               <div
                 data-plasmic-name={"one"}
                 data-plasmic-override={overrides.one}
                 className={classNames(projectcss.all, sty.one)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__qrGtv)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: maskGrouppng2NTlqluXgu,
-                    fullWidth: 119,
-                    fullHeight: 362,
-                    aspectRatio: undefined
-                  }}
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent___4AkXa
+                  )}
                 />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__emYuc
-                  )}
-                >
-                  {"Vilijamovka"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__sLjr
-                  )}
-                >
-                  {""}
-                </div>
               </div>
               <div
-                data-plasmic-name={"two2"}
-                data-plasmic-override={overrides.two2}
-                className={classNames(projectcss.all, sty.two2)}
+                data-plasmic-name={"one2"}
+                data-plasmic-override={overrides.one2}
+                className={classNames(projectcss.all, sty.one2)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__bYp83)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__kJqlb
+                  )}
+                  img={{
                     src: maskGroup1Png2GwXHtFlPg,
                     fullWidth: 118,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__mDyRx
-                  )}
                 >
                   {"Kajsija"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__y5Bt
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
               <div
-                data-plasmic-name={"three"}
-                data-plasmic-override={overrides.three}
-                className={classNames(projectcss.all, sty.three)}
+                data-plasmic-name={"one3"}
+                data-plasmic-override={overrides.one3}
+                className={classNames(projectcss.all, sty.one3)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__cN8Ka)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__iMvUz
+                  )}
+                  img={{
                     src: maskGroup3Png2I9PPuApWk,
                     fullWidth: 113,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___8Lj7J
-                  )}
                 >
                   {"Šljiva"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gjNo5
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
-              <div className={classNames(projectcss.all, sty.column__lFbxd)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__w2XRh)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+              <div
+                data-plasmic-name={"one4"}
+                data-plasmic-override={overrides.one4}
+                className={classNames(projectcss.all, sty.one4)}
+              >
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__qZiIx
+                  )}
+                  img={{
                     src: maskGroup2Png23NkeRtvJw,
                     fullWidth: 122,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__enwzS
-                  )}
                 >
                   {"Dunja"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__hjPbv
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
               <div
-                data-plasmic-name={"two"}
-                data-plasmic-override={overrides.two}
-                className={classNames(projectcss.all, sty.two)}
+                data-plasmic-name={"one5"}
+                data-plasmic-override={overrides.one5}
+                className={classNames(projectcss.all, sty.one5)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___2FyLh)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__bu3F
+                  )}
+                  img={{
                     src: maskGroup4Png2LtRln4M9X,
                     fullWidth: 118,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__trstz
-                  )}
                 >
                   {"Loza"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__qCmCz
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
-              <div className={classNames(projectcss.all, sty.column__ecCnG)} />
+              <div
+                data-plasmic-name={"one7"}
+                data-plasmic-override={overrides.one7}
+                className={classNames(projectcss.all, sty.one7)}
+              />
             </p.Stack>
           </div>
           <div
-            data-plasmic-name={"whereCanYouTasteProdcuts"}
-            data-plasmic-override={overrides.whereCanYouTasteProdcuts}
-            className={classNames(projectcss.all, sty.whereCanYouTasteProdcuts)}
+            data-plasmic-name={"whereCanYouTasteProdcuts2"}
+            data-plasmic-override={overrides.whereCanYouTasteProdcuts2}
+            className={classNames(
+              projectcss.all,
+              sty.whereCanYouTasteProdcuts2
+            )}
           >
             <div
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              className={classNames(projectcss.all, sty.columns)}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__jWhQs
+              )}
             >
-              <div className={classNames(projectcss.all, sty.column___7AnKr)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__pJg7O
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Rakija \nkao stil života"
-                    : "RAKIJA PRAVLJENA ZA DUŠU..."}
-                </div>
-              </div>
+              {"RAKIJA PRAVLJENA ZA DUŠU..."}
             </div>
           </div>
           <div
@@ -647,11 +563,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.contact2}
                 className={classNames(projectcss.all, sty.contact2)}
               >
-                <div
-                  data-plasmic-name={"freeBox"}
-                  data-plasmic-override={overrides.freeBox}
-                  className={classNames(projectcss.all, sty.freeBox)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__qbhZ2)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -877,12 +789,14 @@ const PlasmicDescendants = {
     "scroll",
     "featuredProducts",
     "productsColumnsParent",
+    "one6",
     "one",
-    "two2",
-    "three",
-    "two",
-    "whereCanYouTasteProdcuts",
-    "columns",
+    "one2",
+    "one3",
+    "one4",
+    "one5",
+    "one7",
+    "whereCanYouTasteProdcuts2",
     "discover",
     "discoverColumns",
     "mapNeedToFindBetterMap",
@@ -890,7 +804,6 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
-    "freeBox",
     "textInput",
     "textInput2",
     "textInput3",
@@ -925,26 +838,34 @@ const PlasmicDescendants = {
   featuredProducts: [
     "featuredProducts",
     "productsColumnsParent",
+    "one6",
     "one",
-    "two2",
-    "three",
-    "two"
+    "one2",
+    "one3",
+    "one4",
+    "one5",
+    "one7"
   ],
 
   productsColumnsParent: [
     "productsColumnsParent",
+    "one6",
     "one",
-    "two2",
-    "three",
-    "two"
+    "one2",
+    "one3",
+    "one4",
+    "one5",
+    "one7"
   ],
 
+  one6: ["one6"],
   one: ["one"],
-  two2: ["two2"],
-  three: ["three"],
-  two: ["two"],
-  whereCanYouTasteProdcuts: ["whereCanYouTasteProdcuts", "columns"],
-  columns: ["columns"],
+  one2: ["one2"],
+  one3: ["one3"],
+  one4: ["one4"],
+  one5: ["one5"],
+  one7: ["one7"],
+  whereCanYouTasteProdcuts2: ["whereCanYouTasteProdcuts2"],
   discover: [
     "discover",
     "discoverColumns",
@@ -964,7 +885,6 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
-    "freeBox",
     "textInput",
     "textInput2",
     "textInput3",
@@ -974,15 +894,13 @@ const PlasmicDescendants = {
   contactParent: [
     "contactParent",
     "contact2",
-    "freeBox",
     "textInput",
     "textInput2",
     "textInput3",
     "mapAndInfo"
   ],
 
-  contact2: ["contact2", "freeBox", "textInput", "textInput2", "textInput3"],
-  freeBox: ["freeBox", "textInput", "textInput2", "textInput3"],
+  contact2: ["contact2", "textInput", "textInput2", "textInput3"],
   textInput: ["textInput"],
   textInput2: ["textInput2"],
   textInput3: ["textInput3"],
@@ -1034,12 +952,14 @@ export const PlasmicHomepage = Object.assign(
     scroll: makeNodeComponent("scroll"),
     featuredProducts: makeNodeComponent("featuredProducts"),
     productsColumnsParent: makeNodeComponent("productsColumnsParent"),
+    one6: makeNodeComponent("one6"),
     one: makeNodeComponent("one"),
-    two2: makeNodeComponent("two2"),
-    three: makeNodeComponent("three"),
-    two: makeNodeComponent("two"),
-    whereCanYouTasteProdcuts: makeNodeComponent("whereCanYouTasteProdcuts"),
-    columns: makeNodeComponent("columns"),
+    one2: makeNodeComponent("one2"),
+    one3: makeNodeComponent("one3"),
+    one4: makeNodeComponent("one4"),
+    one5: makeNodeComponent("one5"),
+    one7: makeNodeComponent("one7"),
+    whereCanYouTasteProdcuts2: makeNodeComponent("whereCanYouTasteProdcuts2"),
     discover: makeNodeComponent("discover"),
     discoverColumns: makeNodeComponent("discoverColumns"),
     mapNeedToFindBetterMap: makeNodeComponent("mapNeedToFindBetterMap"),
@@ -1047,7 +967,6 @@ export const PlasmicHomepage = Object.assign(
     contact: makeNodeComponent("contact"),
     contactParent: makeNodeComponent("contactParent"),
     contact2: makeNodeComponent("contact2"),
-    freeBox: makeNodeComponent("freeBox"),
     textInput: makeNodeComponent("textInput"),
     textInput2: makeNodeComponent("textInput2"),
     textInput3: makeNodeComponent("textInput3"),

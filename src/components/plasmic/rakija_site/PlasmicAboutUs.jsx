@@ -245,7 +245,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                                 }
                                 style={{ color: "#AC8D5B" }}
                               >
-                                {"LOREM IPSUM DOLOR"}
+                                {"Vinarija Gajić"}
                               </span>
                             </React.Fragment>
                           )}
@@ -295,7 +295,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                                 }
                                 style={{ color: "#AC8D5B" }}
                               >
-                                {"LOREM IPSUM DOLOR"}
+                                {"Vinarija Gajić"}
                               </span>
                             </React.Fragment>
                           )}
@@ -304,7 +304,7 @@ function PlasmicAboutUs__RenderFunc(props) {
 
                       <React.Fragment>
                         {
-                          "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
+                          "\nMi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima.\n\nNaša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom.\n\nKod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa.\n\n"
                         }
                       </React.Fragment>
                     </React.Fragment>
@@ -352,33 +352,11 @@ function PlasmicAboutUs__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__jPaWk
-                  )}
-                  href={`/about`}
-                >
-                  {"Learn More About Our Program"}
-                </a>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__cMla7
-                  )}
-                  href={"#products"}
-                >
-                  {"Learn More About Our Products"}
-                </a>
-                <a
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
                     sty.link__oohY
                   )}
                   href={"#contact"}
                 >
-                  {"Feel Free To Contact Us Any Time"}
+                  {""}
                 </a>
               </div>
               <div className={classNames(projectcss.all, sty.column___5JhtC)}>
@@ -413,7 +391,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                       sty.text__t7UEv
                     )}
                   >
-                    {"CONTACT "}
+                    {""}
                   </div>
                 ) : null}
                 <div
@@ -423,7 +401,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.text___1Es0I
                   )}
                 >
-                  {"Street Address, Belgrade\n+123 456 9\nexample@gmail.com"}
+                  {""}
                 </div>
               </div>
             </div>

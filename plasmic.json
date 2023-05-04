@@ -101,6 +101,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "Ay49hDZCzV",
+          "name": "BottleComponent",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicBottleComponent.jsx",
+          "importSpec": {
+            "modulePath": "BottleComponent.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicBottleComponent.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -439,6 +452,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.272",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
+  "cliVersion": "0.1.273",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.273/dist/plasmic.schema.json"
 }
