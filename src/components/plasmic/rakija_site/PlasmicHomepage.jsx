@@ -33,7 +33,7 @@ import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-im
 import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
 import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
 import statisticalRegionsOfSerbiaNuts1PngCzlxPqp1M from "../gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"; // plasmic-import: czlxPqp1M/picture
-import screenShot20230216At21855AMpngLa10StmJ from "./images/screenShot20230216At21855AMpng.png"; // plasmic-import: la10StmJ-/picture
+import screenShot20230504At123452AMpngXEnDcgCfk from "../gajiceva/images/screenShot20230504At123452AMpng.png"; // plasmic-import: xEnDCGCfk/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -131,7 +131,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.a,
                       sty.link__zt2Jq
                     )}
-                    href={`/`}
+                    href={`/homepage`}
                   >
                     <p.PlasmicImg
                       alt={""}
@@ -176,7 +176,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link___8TRqF
                     )}
-                    href={`/about`}
+                    href={"/about"}
                   >
                     {"O NAMA"}
                   </a>
@@ -187,7 +187,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link__oI0EN
                     )}
-                    href={"/#products"}
+                    href={"#products"}
                   >
                     {"PROIZVODI"}
                   </a>
@@ -350,7 +350,10 @@ function PlasmicHomepage__RenderFunc(props) {
                     "__wab_instance",
                     sty.bottleComponent___4AkXa
                   )}
-                />
+                  link={`/Vilijamovka`}
+                >
+                  {"Vilijamovka"}
+                </BottleComponent>
               </div>
               <div
                 data-plasmic-name={"one2"}
@@ -368,6 +371,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
+                  link={`/Kajsija`}
                 >
                   {"Kajsija"}
                 </BottleComponent>
@@ -388,6 +392,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
+                  link={`/Sljiva`}
                 >
                   {"Šljiva"}
                 </BottleComponent>
@@ -408,6 +413,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
+                  link={`/Dunja`}
                 >
                   {"Dunja"}
                 </BottleComponent>
@@ -428,6 +434,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
+                  link={`/Loza`}
                 >
                   {"Loza"}
                 </BottleComponent>
@@ -652,24 +659,99 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.mapAndInfo}
                 className={classNames(projectcss.all, sty.mapAndInfo)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___2Tdd)}
-                  displayHeight={"401px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"559px"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: screenShot20230216At21855AMpngLa10StmJ,
-                    fullWidth: 1846,
-                    fullHeight: 1356,
-                    aspectRatio: undefined
-                  }}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__xH44V
+                  )}
+                  href={"https://goo.gl/maps/x5F3RiG7H3QG9hFi6"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateTextInputValue"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            variable: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "N_WZqOv2Q",
+                                componentUuid: "-NFrkmsG80gR",
+                                argName: "variable"
+                              },
+                              () => ({
+                                objRoot: $state,
+                                variablePath: ["textInput", "value"]
+                              })
+                            ),
 
+                            operation: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "N_WZqOv2Q",
+                                componentUuid: "-NFrkmsG80gR",
+                                argName: "operation"
+                              },
+                              () => 0
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "N_WZqOv2Q",
+                              componentUuid: "-NFrkmsG80gR"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                const { objRoot, variablePath } = variable;
+                                p.set(objRoot, variablePath, value);
+                                return value;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateTextInputValue"] === "object" &&
+                      typeof $steps["updateTextInputValue"].then === "function"
+                    ) {
+                      $steps["updateTextInputValue"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariable",
+                          interactionUuid: "N_WZqOv2Q",
+                          componentUuid: "-NFrkmsG80gR"
+                        },
+                        $steps["updateTextInputValue"]
+                      );
+                    }
+                  }}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___2Tdd)}
+                    displayHeight={"401px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"559px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: screenShot20230504At123452AMpngXEnDcgCfk,
+                      fullWidth: 1882,
+                      fullHeight: 1576,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </a>
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true

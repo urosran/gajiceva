@@ -114,6 +114,71 @@
           "cssFilePath": "plasmic/gajiceva/PlasmicBottleComponent.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "EDjZNNL20No",
+          "name": "Vilijamovka",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicVilijamovka.jsx",
+          "importSpec": {
+            "modulePath": "Vilijamovka.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicVilijamovka.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "zuhTsWioEe9",
+          "name": "Kajsija",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicKajsija.jsx",
+          "importSpec": {
+            "modulePath": "Kajsija.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicKajsija.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "57lI524mrOk",
+          "name": "Sljiva",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicSljiva.jsx",
+          "importSpec": {
+            "modulePath": "Sljiva.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicSljiva.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "MzsSoHVPRoL",
+          "name": "Dunja",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicDunja.jsx",
+          "importSpec": {
+            "modulePath": "Dunja.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicDunja.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "8Ewm66OXjQH",
+          "name": "Loza",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicLoza.jsx",
+          "importSpec": {
+            "modulePath": "Loza.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicLoza.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -373,6 +438,51 @@
           "id": "czlxPqp1M",
           "name": "Statistical_regions_of_Serbia_NUTS_1.png",
           "filePath": "plasmic/gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"
+        },
+        {
+          "id": "M4falBKkI",
+          "name": "2023-05-03 23.51.19.jpg",
+          "filePath": "plasmic/gajiceva/images/_20230503235119Jpg.jpg"
+        },
+        {
+          "id": "ir2FNwpHm",
+          "name": "image",
+          "filePath": "plasmic/gajiceva/images/image.jpg"
+        },
+        {
+          "id": "ars-gLXcy",
+          "name": "image 2",
+          "filePath": "plasmic/gajiceva/images/image2.jpg"
+        },
+        {
+          "id": "xEnDCGCfk",
+          "name": "Screen Shot 2023-05-04 at 12.34.52 AM.png",
+          "filePath": "plasmic/gajiceva/images/screenShot20230504At123452AMpng.png"
+        },
+        {
+          "id": "_dZle6hln",
+          "name": "hTK7nOoC_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/hTk7NOoC2Xjpeg.jpg"
+        },
+        {
+          "id": "dibUVIBQ9",
+          "name": "0ljWIDy8_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/_0LjWiDy82Xjpeg.jpg"
+        },
+        {
+          "id": "sh-ODOEW_",
+          "name": "Zd9chSqx_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/zd9ChSqx2Xjpeg.jpg"
+        },
+        {
+          "id": "OuXN6t6Z7",
+          "name": "TmkrMKdc_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/tmkrMKdc2Xjpeg.jpg"
+        },
+        {
+          "id": "PNzM3NFhW",
+          "name": "H8tDGnsN_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/h8TDGnsN2Xjpeg.jpg"
         }
       ],
       "indirect": false,
