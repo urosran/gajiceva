@@ -320,17 +320,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 </React.Fragment>
               </div>
             </div>
-            <a
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__eNf0R
-              )}
-              href={`/Dunja`}
-            >
-              {"dunja trial link"}
-            </a>
           </div>
           <div
             data-plasmic-name={"featuredProducts"}
