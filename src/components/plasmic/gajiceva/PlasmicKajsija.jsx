@@ -93,7 +93,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     projectcss.a,
                     sty.link___65Drg
                   )}
-                  href={`/home`}
+                  href={`/`}
                 >
                   <p.PlasmicImg
                     alt={""}
@@ -471,7 +471,7 @@ export const PlasmicKajsija = Object.assign(
     internalArgProps: PlasmicKajsija__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Kajsija",
       description: "",
       ogImageSrc: "",
       canonical: ""

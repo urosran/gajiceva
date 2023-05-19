@@ -92,7 +92,7 @@ function PlasmicSljiva__RenderFunc(props) {
                     projectcss.a,
                     sty.link__zpoIn
                   )}
-                  href={`/home`}
+                  href={`/`}
                 >
                   <p.PlasmicImg
                     alt={""}
@@ -470,7 +470,7 @@ export const PlasmicSljiva = Object.assign(
     internalArgProps: PlasmicSljiva__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Sljiva",
       description: "",
       ogImageSrc: "",
       canonical: ""

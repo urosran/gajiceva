@@ -92,7 +92,7 @@ function PlasmicDunja__RenderFunc(props) {
                     projectcss.a,
                     sty.link__glWJk
                   )}
-                  href={`/home`}
+                  href={`/`}
                 >
                   <p.PlasmicImg
                     alt={""}
@@ -470,7 +470,7 @@ export const PlasmicDunja = Object.assign(
     internalArgProps: PlasmicDunja__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Dunja",
       description: "",
       ogImageSrc: "",
       canonical: ""

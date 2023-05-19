@@ -92,7 +92,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     projectcss.a,
                     sty.link___3Fu1V
                   )}
-                  href={`/home`}
+                  href={`/`}
                 >
                   <p.PlasmicImg
                     alt={""}
@@ -148,7 +148,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__hBhyb
                   )}
-                  href={`/home`}
+                  href={`/`}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -488,7 +488,7 @@ export const PlasmicAboutUs = Object.assign(
     internalArgProps: PlasmicAboutUs__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "About",
       description: "",
       ogImageSrc: "",
       canonical: ""

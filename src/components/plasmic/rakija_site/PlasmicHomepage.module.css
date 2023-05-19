@@ -448,8 +448,9 @@
     padding-bottom: 40px;
   }
 }
-.bottleComponent___4AkXa:global(.__wab_instance) {
+.link__fxgRm {
   position: relative;
+  display: flex;
 }
 .one2 {
   display: flex;
