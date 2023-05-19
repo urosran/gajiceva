@@ -38,8 +38,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
@@ -522,8 +521,7 @@
           "name": "ParallaxProviderWrapper",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
@@ -547,8 +545,7 @@
           "name": "GraphqlFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -562,6 +559,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.273",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.273/dist/plasmic.schema.json"
+  "cliVersion": "0.1.284",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.284/dist/plasmic.schema.json"
 }

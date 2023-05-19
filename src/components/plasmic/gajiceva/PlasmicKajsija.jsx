@@ -71,6 +71,7 @@ function PlasmicKajsija__RenderFunc(props) {
             projectcss.plasmic_tokens,
             sty.parent
           )}
+          id={"Kajsija"}
         >
           <NavigationBar
             data-plasmic-name={"navigationBar"}
@@ -92,7 +93,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     projectcss.a,
                     sty.link___65Drg
                   )}
-                  href={`/homepage`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}
@@ -148,7 +149,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__tidW9
                   )}
-                  href={"/homepage#products"}
+                  href={"/#products"}
                 >
                   {"PROIZVODI"}
                 </a>

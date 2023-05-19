@@ -109,22 +109,14 @@ function PlasmicBottleComponent__RenderFunc(props) {
           className: classNames(sty.slotTargetChildren)
         })}
       </div>
-      <div
-        data-plasmic-name={"text"}
-        data-plasmic-override={overrides.text}
-        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
-      >
-        {""}
-      </div>
     </a>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "freeBox", "text"],
+  root: ["root", "img", "freeBox"],
   img: ["img"],
-  freeBox: ["freeBox"],
-  text: ["text"]
+  freeBox: ["freeBox"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -162,7 +154,6 @@ export const PlasmicBottleComponent = Object.assign(
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
     freeBox: makeNodeComponent("freeBox"),
-    text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicBottleComponent
     internalVariantProps: PlasmicBottleComponent__VariantProps,
     internalArgProps: PlasmicBottleComponent__ArgProps

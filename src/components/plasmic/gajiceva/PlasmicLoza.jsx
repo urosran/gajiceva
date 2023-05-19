@@ -92,7 +92,7 @@ function PlasmicLoza__RenderFunc(props) {
                     projectcss.a,
                     sty.link__shKkq
                   )}
-                  href={`/homepage`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}

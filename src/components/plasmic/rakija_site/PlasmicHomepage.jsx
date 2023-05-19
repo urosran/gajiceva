@@ -131,7 +131,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.a,
                       sty.link__zt2Jq
                     )}
-                    href={`/homepage`}
+                    href={`/home`}
                   >
                     <p.PlasmicImg
                       alt={""}
@@ -187,7 +187,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link__oI0EN
                     )}
-                    href={"#products"}
+                    href={"/#products"}
                   >
                     {"PROIZVODI"}
                   </a>
@@ -345,23 +345,15 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.one}
                 className={classNames(projectcss.all, sty.one)}
               >
-                <a
+                <BottleComponent
                   className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link___4ZFoJ
+                    "__wab_instance",
+                    sty.bottleComponent___4AkXa
                   )}
-                  href={`/Vilijamovka`}
+                  link={`/Vilijamovka`}
                 >
-                  <BottleComponent
-                    className={classNames(
-                      "__wab_instance",
-                      sty.bottleComponent___4AkXa
-                    )}
-                  >
-                    {"Vilijamovka"}
-                  </BottleComponent>
-                </a>
+                  {"Vilijamovka"}
+                </BottleComponent>
               </div>
               <div
                 data-plasmic-name={"one2"}
@@ -546,6 +538,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
                 <Button
                   className={classNames("__wab_instance", sty.button__vjkIk)}
+                  submitsForm={true}
                 >
                   <div
                     className={classNames(
@@ -610,10 +603,12 @@ function PlasmicHomepage__RenderFunc(props) {
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Ime*"}
-                    value={p.generateStateValueProp($state, [
-                      "textInput",
-                      "value"
-                    ])}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput",
+                        "value"
+                      ]) ?? ""
+                    }
                   />
 
                   <TextInput
@@ -627,10 +622,12 @@ function PlasmicHomepage__RenderFunc(props) {
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Email*"}
-                    value={p.generateStateValueProp($state, [
-                      "textInput2",
-                      "value"
-                    ])}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput2",
+                        "value"
+                      ]) ?? ""
+                    }
                   />
 
                   <TextInput
@@ -644,10 +641,12 @@ function PlasmicHomepage__RenderFunc(props) {
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Message*"}
-                    value={p.generateStateValueProp($state, [
-                      "textInput3",
-                      "value"
-                    ])}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput3",
+                        "value"
+                      ]) ?? ""
+                    }
                   />
 
                   <button
@@ -718,6 +717,9 @@ function PlasmicHomepage__RenderFunc(props) {
                                 startIndex,
                                 deleteCount
                               }) => {
+                                if (!variable) {
+                                  return;
+                                }
                                 const { objRoot, variablePath } = variable;
                                 p.set(objRoot, variablePath, value);
                                 return value;
@@ -1069,7 +1071,7 @@ export const PlasmicHomepage = Object.assign(
     internalArgProps: PlasmicHomepage__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Home",
       description: "",
       ogImageSrc: "",
       canonical: ""
