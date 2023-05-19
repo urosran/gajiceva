@@ -137,7 +137,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link___9G3WT
                   )}
-                  href={"/about"}
+                  href={`/about`}
                 >
                   {"O NAMA"}
                 </a>

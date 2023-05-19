@@ -137,7 +137,7 @@ function PlasmicSljiva__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__fv9Z8
                   )}
-                  href={"/about"}
+                  href={`/about`}
                 >
                   {"O NAMA"}
                 </a>

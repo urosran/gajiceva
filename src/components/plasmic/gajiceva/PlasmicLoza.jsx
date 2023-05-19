@@ -137,7 +137,7 @@ function PlasmicLoza__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__oq08X
                   )}
-                  href={"/about"}
+                  href={`/about`}
                 >
                   {"O NAMA"}
                 </a>

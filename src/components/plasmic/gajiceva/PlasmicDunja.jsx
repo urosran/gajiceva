@@ -137,7 +137,7 @@ function PlasmicDunja__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__lOmPh
                   )}
-                  href={"/about"}
+                  href={`/about`}
                 >
                   {"O NAMA"}
                 </a>
