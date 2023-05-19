@@ -297,6 +297,9 @@
   padding-bottom: 20px;
   min-width: 0;
 }
+.link__eNf0R {
+  position: relative;
+}
 .featuredProducts {
   display: flex;
   position: relative;
@@ -448,9 +451,8 @@
     padding-bottom: 40px;
   }
 }
-.link__fxgRm {
+.bottleComponent___4AkXa:global(.__wab_instance) {
   position: relative;
-  display: flex;
 }
 .one2 {
   display: flex;

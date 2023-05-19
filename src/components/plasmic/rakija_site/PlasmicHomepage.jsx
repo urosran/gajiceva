@@ -320,6 +320,17 @@ function PlasmicHomepage__RenderFunc(props) {
                 </React.Fragment>
               </div>
             </div>
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__eNf0R
+              )}
+              href={`/Dunja`}
+            >
+              {"dunja trial link"}
+            </a>
           </div>
           <div
             data-plasmic-name={"featuredProducts"}
@@ -345,24 +356,15 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.one}
                 className={classNames(projectcss.all, sty.one)}
               >
-                <a
+                <BottleComponent
                   className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__fxgRm
+                    "__wab_instance",
+                    sty.bottleComponent___4AkXa
                   )}
-                  href={`/Vilijamovka`}
+                  link={`/Vilijamovka`}
                 >
-                  <BottleComponent
-                    className={classNames(
-                      "__wab_instance",
-                      sty.bottleComponent___4AkXa
-                    )}
-                    link={`/Vilijamovka`}
-                  >
-                    {"Vilijamovka"}
-                  </BottleComponent>
-                </a>
+                  {"Vilijamovka"}
+                </BottleComponent>
               </div>
               <div
                 data-plasmic-name={"one2"}
