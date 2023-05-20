@@ -131,7 +131,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.a,
                       sty.link__zt2Jq
                     )}
-                    href={`/`}
+                    href={`/home`}
                   >
                     <p.PlasmicImg
                       alt={""}
@@ -187,7 +187,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link__oI0EN
                     )}
-                    href={"/#products"}
+                    href={"/home#products"}
                   >
                     {"PROIZVODI"}
                   </a>
@@ -198,7 +198,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link___6OAh
                     )}
-                    href={"#contact"}
+                    href={"/home#contact"}
                   >
                     {"KONTAKT"}
                   </a>

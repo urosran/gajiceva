@@ -92,7 +92,7 @@ function PlasmicDunja__RenderFunc(props) {
                     projectcss.a,
                     sty.link__glWJk
                   )}
-                  href={`/`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}

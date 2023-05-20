@@ -92,7 +92,7 @@ function PlasmicVilijamovka__RenderFunc(props) {
                     projectcss.a,
                     sty.link___5MEse
                   )}
-                  href={`/`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}

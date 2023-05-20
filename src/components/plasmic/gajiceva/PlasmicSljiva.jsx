@@ -92,7 +92,7 @@ function PlasmicSljiva__RenderFunc(props) {
                     projectcss.a,
                     sty.link__zpoIn
                   )}
-                  href={`/`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}

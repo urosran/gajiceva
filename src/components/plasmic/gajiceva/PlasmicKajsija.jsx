@@ -93,7 +93,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     projectcss.a,
                     sty.link___65Drg
                   )}
-                  href={`/`}
+                  href={`/home`}
                 >
                   <p.PlasmicImg
                     alt={""}
