@@ -36,10 +36,10 @@
         {
           "id": "jGx9tiKJoex",
           "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
@@ -491,11 +491,13 @@
         {
           "id": "iQJZxOmZHE",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "UVHhYDXtcJ",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ]
@@ -515,15 +517,16 @@
         {
           "id": "bozP4lLlAZ",
           "name": "ParallaxWrapper",
+          "displayName": "hostless-scroll-parallax",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         },
         {
           "id": "L6MfauX2Cw",
           "name": "ParallaxProviderWrapper",
+          "displayName": "global-parallax-provider",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
@@ -540,15 +543,16 @@
         {
           "id": "ae7V86eNoXA",
           "name": "DataFetcher",
+          "displayName": "hostless-plasmic-query-data-fetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         },
         {
           "id": "0DrxdjD45dkx",
           "name": "GraphqlFetcher",
+          "displayName": "hostless-plasmic-query-graphql-fetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -562,6 +566,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.284",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.284/dist/plasmic.schema.json"
+  "cliVersion": "0.1.286",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
 }

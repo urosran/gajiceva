@@ -177,6 +177,52 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.link___8TRqF
                     )}
                     href={`/about`}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToAboutUs"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "mwJbE88Ch",
+                                  componentUuid: "-NFrkmsG80gR",
+                                  argName: "destination"
+                                },
+                                () => `/about`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "mwJbE88Ch",
+                                componentUuid: "-NFrkmsG80gR"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToAboutUs"] === "object" &&
+                        typeof $steps["goToAboutUs"].then === "function"
+                      ) {
+                        $steps["goToAboutUs"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "mwJbE88Ch",
+                            componentUuid: "-NFrkmsG80gR"
+                          },
+                          $steps["goToAboutUs"]
+                        );
+                      }
+                    }}
                   >
                     {"O NAMA"}
                   </a>
@@ -754,6 +800,55 @@ function PlasmicHomepage__RenderFunc(props) {
                     displayMinWidth={"0"}
                     displayWidth={"100%"}
                     loading={"lazy"}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "3ionTfW7U",
+                                  componentUuid: "-NFrkmsG80gR",
+                                  argName: "destination"
+                                },
+                                () => "https://goo.gl/maps/QAd3jtUs2JdrvRyQ9"
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "3ionTfW7U",
+                                componentUuid: "-NFrkmsG80gR"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"] ===
+                          "object" &&
+                        typeof $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"]
+                          .then === "function"
+                      ) {
+                        $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"] =
+                          await __wrapUserPromise(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "3ionTfW7U",
+                              componentUuid: "-NFrkmsG80gR"
+                            },
+                            $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"]
+                          );
+                      }
+                    }}
                     src={{
                       src: screenShot20230504At123452AMpngXEnDcgCfk,
                       fullWidth: 1882,
