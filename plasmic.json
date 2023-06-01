@@ -36,10 +36,10 @@
         {
           "id": "jGx9tiKJoex",
           "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "toir4xKH4aRMjXM9AUeVMJ",
@@ -101,6 +101,84 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "Ay49hDZCzV",
+          "name": "BottleComponent",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicBottleComponent.jsx",
+          "importSpec": {
+            "modulePath": "BottleComponent.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicBottleComponent.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "EDjZNNL20No",
+          "name": "Vilijamovka",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicVilijamovka.jsx",
+          "importSpec": {
+            "modulePath": "Vilijamovka.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicVilijamovka.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "zuhTsWioEe9",
+          "name": "Kajsija",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicKajsija.jsx",
+          "importSpec": {
+            "modulePath": "Kajsija.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicKajsija.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "57lI524mrOk",
+          "name": "Sljiva",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicSljiva.jsx",
+          "importSpec": {
+            "modulePath": "Sljiva.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicSljiva.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "MzsSoHVPRoL",
+          "name": "Dunja",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicDunja.jsx",
+          "importSpec": {
+            "modulePath": "Dunja.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicDunja.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "8Ewm66OXjQH",
+          "name": "Loza",
+          "type": "managed",
+          "projectId": "toir4xKH4aRMjXM9AUeVMJ",
+          "renderModuleFilePath": "plasmic/gajiceva/PlasmicLoza.jsx",
+          "importSpec": {
+            "modulePath": "Loza.jsx"
+          },
+          "cssFilePath": "plasmic/gajiceva/PlasmicLoza.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -360,6 +438,51 @@
           "id": "czlxPqp1M",
           "name": "Statistical_regions_of_Serbia_NUTS_1.png",
           "filePath": "plasmic/gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"
+        },
+        {
+          "id": "M4falBKkI",
+          "name": "2023-05-03 23.51.19.jpg",
+          "filePath": "plasmic/gajiceva/images/_20230503235119Jpg.jpg"
+        },
+        {
+          "id": "ir2FNwpHm",
+          "name": "image",
+          "filePath": "plasmic/gajiceva/images/image.jpg"
+        },
+        {
+          "id": "ars-gLXcy",
+          "name": "image 2",
+          "filePath": "plasmic/gajiceva/images/image2.jpg"
+        },
+        {
+          "id": "xEnDCGCfk",
+          "name": "Screen Shot 2023-05-04 at 12.34.52 AM.png",
+          "filePath": "plasmic/gajiceva/images/screenShot20230504At123452AMpng.png"
+        },
+        {
+          "id": "_dZle6hln",
+          "name": "hTK7nOoC_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/hTk7NOoC2Xjpeg.jpg"
+        },
+        {
+          "id": "dibUVIBQ9",
+          "name": "0ljWIDy8_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/_0LjWiDy82Xjpeg.jpg"
+        },
+        {
+          "id": "sh-ODOEW_",
+          "name": "Zd9chSqx_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/zd9ChSqx2Xjpeg.jpg"
+        },
+        {
+          "id": "OuXN6t6Z7",
+          "name": "TmkrMKdc_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/tmkrMKdc2Xjpeg.jpg"
+        },
+        {
+          "id": "PNzM3NFhW",
+          "name": "H8tDGnsN_2x.jpeg",
+          "filePath": "plasmic/gajiceva/images/h8TDGnsN2Xjpeg.jpg"
         }
       ],
       "indirect": false,
@@ -368,11 +491,13 @@
         {
           "id": "iQJZxOmZHE",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "UVHhYDXtcJ",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ]
@@ -392,11 +517,13 @@
         {
           "id": "bozP4lLlAZ",
           "name": "ParallaxWrapper",
+          "displayName": "hostless-scroll-parallax",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         },
         {
           "id": "L6MfauX2Cw",
           "name": "ParallaxProviderWrapper",
+          "displayName": "global-parallax-provider",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ]
@@ -416,11 +543,13 @@
         {
           "id": "ae7V86eNoXA",
           "name": "DataFetcher",
+          "displayName": "hostless-plasmic-query-data-fetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         },
         {
           "id": "0DrxdjD45dkx",
           "name": "GraphqlFetcher",
+          "displayName": "hostless-plasmic-query-graphql-fetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
       ]
@@ -437,6 +566,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.272",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
+  "cliVersion": "0.1.286",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
 }

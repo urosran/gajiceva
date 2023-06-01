@@ -19,7 +19,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
-import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
+import BottleComponent from "../../BottleComponent"; // plasmic-import: Ay49hDZCzV/component
 import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
@@ -28,13 +28,12 @@ import projectcss from "./plasmic_rakija_site.module.css"; // plasmic-import: to
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: -NFrkmsG80gR/css
 import group1PngUT7LoZsTj from "./images/group1Png.png"; // plasmic-import: uT7loZsTJ/picture
 import vector1Png3127LsLhox from "./images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
-import maskGrouppng2NTlqluXgu from "./images/maskGrouppng2.png"; // plasmic-import: NTlqluXgu/picture
 import maskGroup1Png2GwXHtFlPg from "./images/maskGroup1Png2.png"; // plasmic-import: gwXHtFlPg/picture
 import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-import: I9PPuApWk/picture
 import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
 import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
 import statisticalRegionsOfSerbiaNuts1PngCzlxPqp1M from "../gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"; // plasmic-import: czlxPqp1M/picture
-import screenShot20230216At21855AMpngLa10StmJ from "./images/screenShot20230216At21855AMpng.png"; // plasmic-import: la10StmJ-/picture
+import screenShot20230504At123452AMpngXEnDcgCfk from "../gajiceva/images/screenShot20230504At123452AMpng.png"; // plasmic-import: xEnDCGCfk/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -132,7 +131,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.a,
                       sty.link__zt2Jq
                     )}
-                    href={`/`}
+                    href={`/home`}
                   >
                     <p.PlasmicImg
                       alt={""}
@@ -178,6 +177,52 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.link___8TRqF
                     )}
                     href={`/about`}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToAboutUs"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "mwJbE88Ch",
+                                  componentUuid: "-NFrkmsG80gR",
+                                  argName: "destination"
+                                },
+                                () => `/about`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "mwJbE88Ch",
+                                componentUuid: "-NFrkmsG80gR"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToAboutUs"] === "object" &&
+                        typeof $steps["goToAboutUs"].then === "function"
+                      ) {
+                        $steps["goToAboutUs"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "mwJbE88Ch",
+                            componentUuid: "-NFrkmsG80gR"
+                          },
+                          $steps["goToAboutUs"]
+                        );
+                      }
+                    }}
                   >
                     {"O NAMA"}
                   </a>
@@ -188,7 +233,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link__oI0EN
                     )}
-                    href={"/#products"}
+                    href={"/home#products"}
                   >
                     {"PROIZVODI"}
                   </a>
@@ -199,7 +244,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link___6OAh
                     )}
-                    href={"#contact"}
+                    href={"/home#contact"}
                   >
                     {"KONTAKT"}
                   </a>
@@ -251,46 +296,74 @@ function PlasmicHomepage__RenderFunc(props) {
                   </span>
                 </React.Fragment>
               </div>
-              <div
-                data-plasmic-name={"bottomText"}
-                data-plasmic-override={overrides.bottomText}
-                className={classNames(projectcss.all, sty.bottomText)}
-              >
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"socialsConvertToLinks"}
-                  data-plasmic-override={overrides.socialsConvertToLinks}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.socialsConvertToLinks
-                  )}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__h6K2J
-                    )}
-                  >
-                    {""}
-                  </div>
-                </p.Stack>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
                 <div
-                  data-plasmic-name={"scroll"}
-                  data-plasmic-override={overrides.scroll}
-                  className={classNames(projectcss.all, sty.scroll)}
+                  data-plasmic-name={"bottomText"}
+                  data-plasmic-override={overrides.bottomText}
+                  className={classNames(projectcss.all, sty.bottomText)}
                 >
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"socialsConvertToLinks"}
+                      data-plasmic-override={overrides.socialsConvertToLinks}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.socialsConvertToLinks
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__h6K2J
+                        )}
+                      >
+                        {""}
+                      </div>
+                    </p.Stack>
+                  ) : null}
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__zvzR
-                    )}
+                    data-plasmic-name={"scroll"}
+                    data-plasmic-override={overrides.scroll}
+                    className={classNames(projectcss.all, sty.scroll)}
                   >
-                    {"Scroll"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__zvzR
+                      )}
+                    >
+                      {"Scroll"}
+                    </div>
                   </div>
                 </div>
+              ) : null}
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__nUhsR)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__yr3Wg
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"Scroll"}
+                  </span>
+                </React.Fragment>
               </div>
             </div>
           </div>
@@ -307,255 +380,135 @@ function PlasmicHomepage__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.productsColumnsParent)}
             >
-              <div className={classNames(projectcss.all, sty.column__vzsTu)} />
+              <div
+                data-plasmic-name={"one6"}
+                data-plasmic-override={overrides.one6}
+                className={classNames(projectcss.all, sty.one6)}
+              />
+
               <div
                 data-plasmic-name={"one"}
                 data-plasmic-override={overrides.one}
                 className={classNames(projectcss.all, sty.one)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__qrGtv)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: maskGrouppng2NTlqluXgu,
-                    fullWidth: 119,
-                    fullHeight: 362,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div
+                <BottleComponent
                   className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__emYuc
+                    "__wab_instance",
+                    sty.bottleComponent___4AkXa
                   )}
+                  link={`/Vilijamovka`}
                 >
                   {"Vilijamovka"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__sLjr
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
               <div
-                data-plasmic-name={"two2"}
-                data-plasmic-override={overrides.two2}
-                className={classNames(projectcss.all, sty.two2)}
+                data-plasmic-name={"one2"}
+                data-plasmic-override={overrides.one2}
+                className={classNames(projectcss.all, sty.one2)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__bYp83)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__kJqlb
+                  )}
+                  img={{
                     src: maskGroup1Png2GwXHtFlPg,
                     fullWidth: 118,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__mDyRx
-                  )}
+                  link={`/Kajsija`}
                 >
                   {"Kajsija"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__y5Bt
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
               <div
-                data-plasmic-name={"three"}
-                data-plasmic-override={overrides.three}
-                className={classNames(projectcss.all, sty.three)}
+                data-plasmic-name={"one3"}
+                data-plasmic-override={overrides.one3}
+                className={classNames(projectcss.all, sty.one3)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__cN8Ka)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__iMvUz
+                  )}
+                  img={{
                     src: maskGroup3Png2I9PPuApWk,
                     fullWidth: 113,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___8Lj7J
-                  )}
+                  link={`/Sljiva`}
                 >
                   {"Šljiva"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gjNo5
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
-              <div className={classNames(projectcss.all, sty.column__lFbxd)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__w2XRh)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+              <div
+                data-plasmic-name={"one4"}
+                data-plasmic-override={overrides.one4}
+                className={classNames(projectcss.all, sty.one4)}
+              >
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__qZiIx
+                  )}
+                  img={{
                     src: maskGroup2Png23NkeRtvJw,
                     fullWidth: 122,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__enwzS
-                  )}
+                  link={`/Dunja`}
                 >
                   {"Dunja"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__hjPbv
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
               <div
-                data-plasmic-name={"two"}
-                data-plasmic-override={overrides.two}
-                className={classNames(projectcss.all, sty.two)}
+                data-plasmic-name={"one5"}
+                data-plasmic-override={overrides.one5}
+                className={classNames(projectcss.all, sty.one5)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___2FyLh)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
+                <BottleComponent
+                  className={classNames(
+                    "__wab_instance",
+                    sty.bottleComponent__bu3F
+                  )}
+                  img={{
                     src: maskGroup4Png2LtRln4M9X,
                     fullWidth: 118,
                     fullHeight: 361,
                     aspectRatio: undefined
                   }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__trstz
-                  )}
+                  link={`/Loza`}
                 >
                   {"Loza"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__qCmCz
-                  )}
-                >
-                  {""}
-                </div>
+                </BottleComponent>
               </div>
-              <div className={classNames(projectcss.all, sty.column__ecCnG)} />
+              <div
+                data-plasmic-name={"one7"}
+                data-plasmic-override={overrides.one7}
+                className={classNames(projectcss.all, sty.one7)}
+              />
             </p.Stack>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__g8Ao6)}>
+          <div
+            data-plasmic-name={"whereCanYouTasteProdcuts2"}
+            data-plasmic-override={overrides.whereCanYouTasteProdcuts2}
+            className={classNames(
+              projectcss.all,
+              sty.whereCanYouTasteProdcuts2
+            )}
+          >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__pJg7O
+                sty.text__jWhQs
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "Rakija \nkao stil života"
-                : "RAKIJA PRAVLJENA ZA DUŠU..."}
+              {"RAKIJA PRAVLJENA ZA DUŠU..."}
             </div>
-            <ParallaxWrapper
-              data-plasmic-name={"scrollParallax"}
-              data-plasmic-override={overrides.scrollParallax}
-              className={classNames("__wab_instance", sty.scrollParallax)}
-              speed={40}
-            >
-              <div
-                data-plasmic-name={"whereCanYouTasteProdcuts"}
-                data-plasmic-override={overrides.whereCanYouTasteProdcuts}
-                className={classNames(
-                  projectcss.all,
-                  sty.whereCanYouTasteProdcuts
-                )}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__jsxsB)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__d1Ukt
-                    )}
-                  >
-                    {""}
-                  </div>
-                </div>
-              </div>
-            </ParallaxWrapper>
           </div>
           <div
             data-plasmic-name={"discover"}
@@ -631,6 +584,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
                 <Button
                   className={classNames("__wab_instance", sty.button__vjkIk)}
+                  submitsForm={true}
                 >
                   <div
                     className={classNames(
@@ -694,11 +648,13 @@ function PlasmicHomepage__RenderFunc(props) {
                         "value"
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
-                    placeholder={"Name*"}
-                    value={p.generateStateValueProp($state, [
-                      "textInput",
-                      "value"
-                    ])}
+                    placeholder={"Ime*"}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput",
+                        "value"
+                      ]) ?? ""
+                    }
                   />
 
                   <TextInput
@@ -712,10 +668,12 @@ function PlasmicHomepage__RenderFunc(props) {
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Email*"}
-                    value={p.generateStateValueProp($state, [
-                      "textInput2",
-                      "value"
-                    ])}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput2",
+                        "value"
+                      ]) ?? ""
+                    }
                   />
 
                   <TextInput
@@ -729,10 +687,12 @@ function PlasmicHomepage__RenderFunc(props) {
                       ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Message*"}
-                    value={p.generateStateValueProp($state, [
-                      "textInput3",
-                      "value"
-                    ])}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput3",
+                        "value"
+                      ]) ?? ""
+                    }
                   />
 
                   <button
@@ -752,24 +712,151 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.mapAndInfo}
                 className={classNames(projectcss.all, sty.mapAndInfo)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___2Tdd)}
-                  displayHeight={"401px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"559px"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: screenShot20230216At21855AMpngLa10StmJ,
-                    fullWidth: 1846,
-                    fullHeight: 1356,
-                    aspectRatio: undefined
-                  }}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__xH44V
+                  )}
+                  href={"https://goo.gl/maps/x5F3RiG7H3QG9hFi6"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateTextInputValue"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            variable: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "N_WZqOv2Q",
+                                componentUuid: "-NFrkmsG80gR",
+                                argName: "variable"
+                              },
+                              () => ({
+                                objRoot: $state,
+                                variablePath: ["textInput", "value"]
+                              })
+                            ),
 
+                            operation: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "N_WZqOv2Q",
+                                componentUuid: "-NFrkmsG80gR",
+                                argName: "operation"
+                              },
+                              () => 0
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "N_WZqOv2Q",
+                              componentUuid: "-NFrkmsG80gR"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+                                p.set(objRoot, variablePath, value);
+                                return value;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateTextInputValue"] === "object" &&
+                      typeof $steps["updateTextInputValue"].then === "function"
+                    ) {
+                      $steps["updateTextInputValue"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariable",
+                          interactionUuid: "N_WZqOv2Q",
+                          componentUuid: "-NFrkmsG80gR"
+                        },
+                        $steps["updateTextInputValue"]
+                      );
+                    }
+                  }}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___2Tdd)}
+                    displayHeight={"401px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"559px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "3ionTfW7U",
+                                  componentUuid: "-NFrkmsG80gR",
+                                  argName: "destination"
+                                },
+                                () => "https://goo.gl/maps/QAd3jtUs2JdrvRyQ9"
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "3ionTfW7U",
+                                componentUuid: "-NFrkmsG80gR"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  location.assign(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"] ===
+                          "object" &&
+                        typeof $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"]
+                          .then === "function"
+                      ) {
+                        $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"] =
+                          await __wrapUserPromise(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "navigation",
+                              interactionUuid: "3ionTfW7U",
+                              componentUuid: "-NFrkmsG80gR"
+                            },
+                            $steps["goToHttpsgooglmapsQAd3JtUs2JdrvRyQ9"]
+                          );
+                      }
+                    }}
+                    src={{
+                      src: screenShot20230504At123452AMpngXEnDcgCfk,
+                      fullWidth: 1882,
+                      fullHeight: 1576,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </a>
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -800,7 +887,17 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-override={overrides.footerParentColumns}
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
-              <div className={classNames(projectcss.all, sty.column___5Pwxl)} />
+              <div className={classNames(projectcss.all, sty.column___5Pwxl)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rt2AI
+                  )}
+                >
+                  {""}
+                </div>
+              </div>
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
                 <p.PlasmicImg
                   data-plasmic-name={"logo"}
@@ -879,12 +976,14 @@ const PlasmicDescendants = {
     "scroll",
     "featuredProducts",
     "productsColumnsParent",
+    "one6",
     "one",
-    "two2",
-    "three",
-    "two",
-    "scrollParallax",
-    "whereCanYouTasteProdcuts",
+    "one2",
+    "one3",
+    "one4",
+    "one5",
+    "one7",
+    "whereCanYouTasteProdcuts2",
     "discover",
     "discoverColumns",
     "mapNeedToFindBetterMap",
@@ -926,26 +1025,34 @@ const PlasmicDescendants = {
   featuredProducts: [
     "featuredProducts",
     "productsColumnsParent",
+    "one6",
     "one",
-    "two2",
-    "three",
-    "two"
+    "one2",
+    "one3",
+    "one4",
+    "one5",
+    "one7"
   ],
 
   productsColumnsParent: [
     "productsColumnsParent",
+    "one6",
     "one",
-    "two2",
-    "three",
-    "two"
+    "one2",
+    "one3",
+    "one4",
+    "one5",
+    "one7"
   ],
 
+  one6: ["one6"],
   one: ["one"],
-  two2: ["two2"],
-  three: ["three"],
-  two: ["two"],
-  scrollParallax: ["scrollParallax", "whereCanYouTasteProdcuts"],
-  whereCanYouTasteProdcuts: ["whereCanYouTasteProdcuts"],
+  one2: ["one2"],
+  one3: ["one3"],
+  one4: ["one4"],
+  one5: ["one5"],
+  one7: ["one7"],
+  whereCanYouTasteProdcuts2: ["whereCanYouTasteProdcuts2"],
   discover: [
     "discover",
     "discoverColumns",
@@ -1032,12 +1139,14 @@ export const PlasmicHomepage = Object.assign(
     scroll: makeNodeComponent("scroll"),
     featuredProducts: makeNodeComponent("featuredProducts"),
     productsColumnsParent: makeNodeComponent("productsColumnsParent"),
+    one6: makeNodeComponent("one6"),
     one: makeNodeComponent("one"),
-    two2: makeNodeComponent("two2"),
-    three: makeNodeComponent("three"),
-    two: makeNodeComponent("two"),
-    scrollParallax: makeNodeComponent("scrollParallax"),
-    whereCanYouTasteProdcuts: makeNodeComponent("whereCanYouTasteProdcuts"),
+    one2: makeNodeComponent("one2"),
+    one3: makeNodeComponent("one3"),
+    one4: makeNodeComponent("one4"),
+    one5: makeNodeComponent("one5"),
+    one7: makeNodeComponent("one7"),
+    whereCanYouTasteProdcuts2: makeNodeComponent("whereCanYouTasteProdcuts2"),
     discover: makeNodeComponent("discover"),
     discoverColumns: makeNodeComponent("discoverColumns"),
     mapNeedToFindBetterMap: makeNodeComponent("mapNeedToFindBetterMap"),
@@ -1057,7 +1166,7 @@ export const PlasmicHomepage = Object.assign(
     internalArgProps: PlasmicHomepage__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Home",
       description: "",
       ogImageSrc: "",
       canonical: ""
