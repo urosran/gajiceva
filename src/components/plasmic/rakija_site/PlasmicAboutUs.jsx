@@ -191,479 +191,126 @@ function PlasmicAboutUs__RenderFunc(props) {
           />
 
           <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            className={classNames(projectcss.all, sty.columns)}
           >
-            <div
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              className={classNames(projectcss.all, sty.columns)}
-            >
-              <div className={classNames(projectcss.all, sty.column__f00W)}>
-                {(
+            <div className={classNames(projectcss.all, sty.column__h2SSy)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__arOIp)}
+                displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ub0Ec
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4__yYs3C
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4__yYs3C
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nMi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima.\n\nNaša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom.\n\nKod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa.\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    )}
-                  </div>
-                ) : null}
-                {(
+                    ? "360px"
+                    : "657px"
+                }
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : false
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___7J1Aa
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    ? "547px"
+                    : "511px"
+                }
+                loading={"lazy"}
+                src={{
+                  src: image2ArsGLXcy,
+                  fullWidth: 934,
+                  fullHeight: 1400,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.column__hSpLz)}>
+              <div
+                data-plasmic-name={"vinarijaGajic"}
+                data-plasmic-override={overrides.vinarijaGajic}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.vinarijaGajic
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h2
+                      data-plasmic-name={"h2"}
+                      data-plasmic-override={overrides.h2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2
+                      )}
+                    >
                       <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4___3BBl
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
                           }
-                        </React.Fragment>
+                          style={{ color: "#AC8D5B" }}
+                        >
+                          {"Vinarija Gajic"}
+                        </span>
                       </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4___3BBl
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
+                    </h2>
+                  }
 
-                        <React.Fragment>
-                          {
-                            "\nMi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima.\n\nNaša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom.\n\nKod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa.\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    )}
-                  </div>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : false
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__pbtRe
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4__bUvQq
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4__bUvQq
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nMi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima.\n\nNaša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom.\n\nKod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa.\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    )}
-                  </div>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : false
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yHeTg
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4___6BkFi
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nOUR MANIFEST\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat rem ipsum dolor sit amet. consectetur adipiscing elit. sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore.\n\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        {
-                          <h4
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h4,
-                              projectcss.__wab_text,
-                              sty.h4___6BkFi
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"LOREM IPSUM DOLOR"}
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ color: "#AC8D5B" }}
-                                >
-                                  {"Vinarija Gajić"}
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </h4>
-                        }
-
-                        <React.Fragment>
-                          {
-                            "\nMi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima.\n\nNaša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom.\n\nKod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa.\n"
-                          }
-                        </React.Fragment>
-                      </React.Fragment>
-                    )}
-                  </div>
-                ) : null}
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
               </div>
-              <div className={classNames(projectcss.all, sty.column__h2SSy)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__arOIp)}
-                  displayHeight={"751px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: image2ArsGLXcy,
-                    fullWidth: 934,
-                    fullHeight: 1400,
-                    aspectRatio: undefined
-                  }}
-                />
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nakec
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                  >
+                    {
+                      "Mi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima."
+                    }
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                  >
+                    {""}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                  >
+                    {
+                      "Naša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom."
+                    }
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                  >
+                    {""}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                  >
+                    {
+                      "Kod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa."
+                    }
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                </React.Fragment>
               </div>
             </div>
           </div>
@@ -759,8 +406,9 @@ const PlasmicDescendants = {
     "parent",
     "navigationBar",
     "logoFillIn",
-    "freeBox",
     "columns",
+    "vinarijaGajic",
+    "h2",
     "footer",
     "footerParentColumns",
     "logo"
@@ -768,8 +416,9 @@ const PlasmicDescendants = {
 
   navigationBar: ["navigationBar", "logoFillIn"],
   logoFillIn: ["logoFillIn"],
-  freeBox: ["freeBox", "columns"],
-  columns: ["columns"],
+  columns: ["columns", "vinarijaGajic", "h2"],
+  vinarijaGajic: ["vinarijaGajic", "h2"],
+  h2: ["h2"],
   footer: ["footer", "footerParentColumns", "logo"],
   footerParentColumns: ["footerParentColumns", "logo"],
   logo: ["logo"]
@@ -810,8 +459,9 @@ export const PlasmicAboutUs = Object.assign(
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
     logoFillIn: makeNodeComponent("logoFillIn"),
-    freeBox: makeNodeComponent("freeBox"),
     columns: makeNodeComponent("columns"),
+    vinarijaGajic: makeNodeComponent("vinarijaGajic"),
+    h2: makeNodeComponent("h2"),
     footer: makeNodeComponent("footer"),
     footerParentColumns: makeNodeComponent("footerParentColumns"),
     logo: makeNodeComponent("logo"),
