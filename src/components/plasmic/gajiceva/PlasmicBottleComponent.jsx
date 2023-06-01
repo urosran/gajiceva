@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "../rakija_site/plasmic_rakija_site.module.css"; // plasmic-import: toir4xKH4aRMjXM9AUeVMJ/projectcss
 import sty from "./PlasmicBottleComponent.module.css"; // plasmic-import: Ay49hDZCzV/css
 import maskGrouppng2NTlqluXgu from "../rakija_site/images/maskGrouppng2.png"; // plasmic-import: NTlqluXgu/picture
@@ -79,6 +80,7 @@ function PlasmicBottleComponent__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
       href={args.link}

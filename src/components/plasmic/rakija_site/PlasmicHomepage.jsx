@@ -24,6 +24,7 @@ import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_rakija_site.module.css"; // plasmic-import: toir4xKH4aRMjXM9AUeVMJ/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: -NFrkmsG80gR/css
 import group1PngUT7LoZsTj from "./images/group1Png.png"; // plasmic-import: uT7loZsTJ/picture
@@ -103,6 +104,7 @@ function PlasmicHomepage__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.parent
           )}
         >
@@ -348,7 +350,11 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
               ) : null}
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__nUhsR)}>
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
               <div
                 className={classNames(
                   projectcss.all,
@@ -617,7 +623,12 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-override={overrides.contact2}
                 className={classNames(projectcss.all, sty.contact2)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__qbhZ2)}>
+                <form
+                  data-plasmic-name={"form"}
+                  data-plasmic-override={overrides.form}
+                  action={"https://formspree.io/f/xoqzoagr"}
+                  className={classNames(projectcss.all, sty.form)}
+                >
                   <div
                     className={classNames(
                       projectcss.all,
@@ -627,21 +638,11 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     {"Kako do nas?"}
                   </div>
-                  {true ? (
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ubJh8
-                      )}
-                    >
-                      {""}
-                    </div>
-                  ) : null}
                   <TextInput
                     data-plasmic-name={"textInput"}
                     data-plasmic-override={overrides.textInput}
                     className={classNames("__wab_instance", sty.textInput)}
+                    name={"name"}
                     onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput",
@@ -661,6 +662,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     data-plasmic-name={"textInput2"}
                     data-plasmic-override={overrides.textInput2}
                     className={classNames("__wab_instance", sty.textInput2)}
+                    name={"email"}
                     onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput2",
@@ -679,7 +681,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   <TextInput
                     data-plasmic-name={"textInput3"}
                     data-plasmic-override={overrides.textInput3}
+                    aria-label={"message"}
                     className={classNames("__wab_instance", sty.textInput3)}
+                    name={"message"}
                     onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput3",
@@ -702,10 +706,14 @@ function PlasmicHomepage__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.button__kMYcu
                     )}
+                    formAction={"https://formspree.io/f/xoqzoagr"}
+                    formMethod={"submit"}
+                    method={"submit"}
+                    type={"submit"}
                   >
                     {"POŠALJI"}
                   </button>
-                </div>
+                </form>
               </div>
               <div
                 data-plasmic-name={"mapAndInfo"}
@@ -974,6 +982,7 @@ const PlasmicDescendants = {
     "bottomText",
     "socialsConvertToLinks",
     "scroll",
+    "freeBox",
     "featuredProducts",
     "productsColumnsParent",
     "one6",
@@ -991,6 +1000,7 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
+    "form",
     "textInput",
     "textInput2",
     "textInput3",
@@ -1007,7 +1017,8 @@ const PlasmicDescendants = {
     "gajicevaRakija",
     "bottomText",
     "socialsConvertToLinks",
-    "scroll"
+    "scroll",
+    "freeBox"
   ],
 
   navigationBar: ["navigationBar", "logoFillIn"],
@@ -1022,6 +1033,7 @@ const PlasmicDescendants = {
   bottomText: ["bottomText", "socialsConvertToLinks", "scroll"],
   socialsConvertToLinks: ["socialsConvertToLinks"],
   scroll: ["scroll"],
+  freeBox: ["freeBox"],
   featuredProducts: [
     "featuredProducts",
     "productsColumnsParent",
@@ -1072,6 +1084,7 @@ const PlasmicDescendants = {
     "contact",
     "contactParent",
     "contact2",
+    "form",
     "textInput",
     "textInput2",
     "textInput3",
@@ -1081,13 +1094,15 @@ const PlasmicDescendants = {
   contactParent: [
     "contactParent",
     "contact2",
+    "form",
     "textInput",
     "textInput2",
     "textInput3",
     "mapAndInfo"
   ],
 
-  contact2: ["contact2", "textInput", "textInput2", "textInput3"],
+  contact2: ["contact2", "form", "textInput", "textInput2", "textInput3"],
+  form: ["form", "textInput", "textInput2", "textInput3"],
   textInput: ["textInput"],
   textInput2: ["textInput2"],
   textInput3: ["textInput3"],
@@ -1137,6 +1152,7 @@ export const PlasmicHomepage = Object.assign(
     bottomText: makeNodeComponent("bottomText"),
     socialsConvertToLinks: makeNodeComponent("socialsConvertToLinks"),
     scroll: makeNodeComponent("scroll"),
+    freeBox: makeNodeComponent("freeBox"),
     featuredProducts: makeNodeComponent("featuredProducts"),
     productsColumnsParent: makeNodeComponent("productsColumnsParent"),
     one6: makeNodeComponent("one6"),
@@ -1154,6 +1170,7 @@ export const PlasmicHomepage = Object.assign(
     contact: makeNodeComponent("contact"),
     contactParent: makeNodeComponent("contactParent"),
     contact2: makeNodeComponent("contact2"),
+    form: makeNodeComponent("form"),
     textInput: makeNodeComponent("textInput"),
     textInput2: makeNodeComponent("textInput2"),
     textInput3: makeNodeComponent("textInput3"),
