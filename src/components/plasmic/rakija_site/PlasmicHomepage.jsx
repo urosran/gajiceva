@@ -123,7 +123,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     projectcss.a,
                     sty.logoFillIn
                   )}
-                  href={"#"}
+                  href={`/home`}
                 >
                   <a
                     className={classNames(

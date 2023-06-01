@@ -40,7 +40,8 @@ export const PlasmicTextInput__ArgProps = new Array(
   "name",
   "required",
   "aria-label",
-  "aria-labelledby"
+  "aria-labelledby",
+  "type"
 );
 
 const __wrapUserFunction =
