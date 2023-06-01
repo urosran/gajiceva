@@ -628,6 +628,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   data-plasmic-override={overrides.form}
                   action={"https://formspree.io/f/xoqzoagr"}
                   className={classNames(projectcss.all, sty.form)}
+                  method={"POST"}
                 >
                   <div
                     className={classNames(
