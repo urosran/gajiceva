@@ -20,7 +20,7 @@
   max-width: 100%;
   object-fit: cover;
   position: fixed;
-  background: none;
+  background: #000000;
   color: #535353;
   height: auto;
   left: 0px;
@@ -78,6 +78,7 @@
   max-width: 800px;
   color: #ac8d5b;
   font-family: "Belleza", sans-serif;
+  padding-right: 10px;
 }
 .parent .link__oq08X:hover {
   color: #ffffff;
@@ -89,6 +90,7 @@
   max-width: 800px;
   color: #ac8d5b;
   font-family: "Belleza", sans-serif;
+  padding-right: 10px;
 }
 .parent .link__juR0U:hover {
   color: #ffffff;
@@ -403,4 +405,7 @@
   .link__oLTbG {
     text-align: center;
   }
+}
+.parent .link__oLTbG:hover {
+  color: var(--token-zy6xhYnWF8Y7);
 }

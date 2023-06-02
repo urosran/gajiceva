@@ -150,7 +150,7 @@ function PlasmicVilijamovka__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__xr2Ti
                   )}
-                  href={"/homepage#products"}
+                  href={"/home#products"}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -161,7 +161,7 @@ function PlasmicVilijamovka__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__nwQk2
                   )}
-                  href={"/homepage#contact"}
+                  href={"/home#contact"}
                 >
                   {"KONTAKT"}
                 </a>

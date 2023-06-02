@@ -161,7 +161,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__u0UuZ
                   )}
-                  href={"/homepage#contact"}
+                  href={"/home#contact"}
                 >
                   {"KONTAKT"}
                 </a>

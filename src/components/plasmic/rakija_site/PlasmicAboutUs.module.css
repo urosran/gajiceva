@@ -21,7 +21,7 @@
   max-width: 100%;
   object-fit: cover;
   position: fixed;
-  background: none;
+  background: #000000;
   color: #535353;
   height: auto;
   left: 0px;
@@ -85,6 +85,7 @@
   max-width: 800px;
   color: #ac8d5b;
   font-family: "Belleza", sans-serif;
+  padding-right: 10px;
 }
 .parent .link___9G3WT:hover {
   color: #ffffff;
@@ -96,6 +97,7 @@
   max-width: 800px;
   color: #ac8d5b;
   font-family: "Belleza", sans-serif;
+  padding: 10px;
 }
 .parent .link__hBhyb:hover {
   color: #ffffff;
@@ -158,7 +160,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 0px 40px 0px 8px;
+  padding: 0px 40px 0px 50px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .column__h2SSy {
@@ -200,7 +202,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 8px;
+  padding: 8px 50px 8px 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .column__hSpLz {
@@ -423,4 +425,7 @@
   .link__qnLyK {
     text-align: center;
   }
+}
+.parent .link__qnLyK:hover {
+  color: var(--token-zy6xhYnWF8Y7);
 }

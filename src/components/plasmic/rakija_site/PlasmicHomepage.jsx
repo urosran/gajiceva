@@ -34,7 +34,7 @@ import maskGroup3Png2I9PPuApWk from "./images/maskGroup3Png2.png"; // plasmic-im
 import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-import: 3NKERtvJw/picture
 import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
 import statisticalRegionsOfSerbiaNuts1PngCzlxPqp1M from "../gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"; // plasmic-import: czlxPqp1M/picture
-import screenShot20230504At123452AMpngXEnDcgCfk from "../gajiceva/images/screenShot20230504At123452AMpng.png"; // plasmic-import: xEnDCGCfk/picture
+import group1Png3YitAgVe3N from "../gajiceva/images/group1Png3.png"; // plasmic-import: YITAgVE3n/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -859,7 +859,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       }
                     }}
                     src={{
-                      src: screenShot20230504At123452AMpngXEnDcgCfk,
+                      src: group1Png3YitAgVe3N,
                       fullWidth: 1882,
                       fullHeight: 1576,
                       aspectRatio: undefined

@@ -484,6 +484,16 @@
           "id": "PNzM3NFhW",
           "name": "H8tDGnsN_2x.jpeg",
           "filePath": "plasmic/gajiceva/images/h8TDGnsN2Xjpeg.jpg"
+        },
+        {
+          "id": "1uGiMSGeT",
+          "name": "Group 1.png 2",
+          "filePath": "plasmic/gajiceva/images/group1Png2.png"
+        },
+        {
+          "id": "YITAgVE3n",
+          "name": "Group 1.png 3",
+          "filePath": "plasmic/gajiceva/images/group1Png3.png"
         }
       ],
       "indirect": false,
@@ -782,6 +792,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.287",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.287/dist/plasmic.schema.json"
+  "cliVersion": "0.1.288",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.288/dist/plasmic.schema.json"
 }

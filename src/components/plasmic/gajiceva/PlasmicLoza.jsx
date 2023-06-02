@@ -150,7 +150,7 @@ function PlasmicLoza__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__juR0U
                   )}
-                  href={"/homepage#products"}
+                  href={"/home#products"}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -161,7 +161,7 @@ function PlasmicLoza__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link___2OLjb
                   )}
-                  href={"/homepage#contact"}
+                  href={"/home#contact"}
                 >
                   {"KONTAKT"}
                 </a>

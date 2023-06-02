@@ -151,7 +151,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__tidW9
                   )}
-                  href={"/#products"}
+                  href={"/home#products"}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -162,7 +162,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__yFfMw
                   )}
-                  href={"/homepage#contact"}
+                  href={"/home#contact"}
                 >
                   {"KONTAKT"}
                 </a>

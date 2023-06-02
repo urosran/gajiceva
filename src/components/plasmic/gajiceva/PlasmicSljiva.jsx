@@ -150,7 +150,7 @@ function PlasmicSljiva__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__cQgxX
                   )}
-                  href={"/homepage#products"}
+                  href={"/home#products"}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -161,7 +161,7 @@ function PlasmicSljiva__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__cv6TW
                   )}
-                  href={"/homepage#contact"}
+                  href={"/home#contact"}
                 >
                   {"KONTAKT"}
                 </a>

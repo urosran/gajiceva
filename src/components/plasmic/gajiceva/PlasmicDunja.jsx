@@ -150,7 +150,7 @@ function PlasmicDunja__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__ws6Ru
                   )}
-                  href={"/homepage#products"}
+                  href={"/home#products"}
                 >
                   {"PROIZVODI"}
                 </a>
@@ -161,7 +161,7 @@ function PlasmicDunja__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__fDpZe
                   )}
-                  href={"/homepage#contact"}
+                  href={"/home#contact"}
                 >
                   {"KONTAKT"}
                 </a>
@@ -326,17 +326,7 @@ function PlasmicDunja__RenderFunc(props) {
               data-plasmic-override={overrides.footerParentColumns}
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
-              <div className={classNames(projectcss.all, sty.column__d9NzX)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__fZrEq
-                  )}
-                >
-                  {""}
-                </div>
-              </div>
+              <div className={classNames(projectcss.all, sty.column__d9NzX)} />
               <div className={classNames(projectcss.all, sty.column__hmvle)}>
                 <p.PlasmicImg
                   data-plasmic-name={"logo"}
