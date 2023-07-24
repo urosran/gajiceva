@@ -949,28 +949,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___2F95L
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"\u041a\u041e\u041d\u0422\u0410\u041a\u0422"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
                       sty.text___7HnAa
                     )}
                   >
@@ -992,17 +970,23 @@ function PlasmicHomepage__RenderFunc(props) {
                     {"\u0411\u0435\u043e\u0433\u0440\u0430\u0434"}
                   </div>
                 ) : null}
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___8Vzje
-                  )}
-                >
-                  {
-                    "\u0428\u043a\u043e\u043b\u0441\u043a\u0430 73, \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0430\u0446 37230, \u0421\u0440\u0431\u0438\u0458\u0430"
-                  }
-                </div>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__uChA
+                    )}
+                    href={'"tel:+38163445155"'}
+                  >
+                    {"+38163445155"}
+                  </a>
+                ) : null}
                 <a
                   className={classNames(
                     projectcss.all,
@@ -1010,9 +994,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.link__pihOh
                   )}
-                  href={"mailto:'gajiceva@gmai.com"}
+                  href={"mailto:'prodajavinarijagajic@gmai.com"}
                 >
-                  {"gajicevarakija@gmail.com"}
+                  {"prodajavinarijagajic@gmail.com"}
                 </a>
               </div>
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
@@ -1037,28 +1021,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               </div>
               <div className={classNames(projectcss.all, sty.column__yAycJ)}>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___7JGt
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"\u041a\u041e\u041d\u0422\u0410\u041a\u0422"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                ) : null}
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -1099,7 +1061,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   )}
                 >
                   {
-                    "\u0428\u043a\u043e\u043b\u0441\u043a\u0430 73, \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0430\u0446 37230, \u0421\u0440\u0431\u0438\u0458\u0430"
+                    "\u0428\u043a\u043e\u043b\u0441\u043a\u0430 73, \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0430\u0446, \u0421\u0440\u0431\u0438\u0458\u0430"
                   }
                 </div>
                 <a

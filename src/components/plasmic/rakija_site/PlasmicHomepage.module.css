@@ -1108,26 +1108,6 @@
     padding: 0px;
   }
 }
-.text___2F95L {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  color: #ffffff;
-  font-family: "Belleza", sans-serif;
-  font-weight: 200;
-  text-align: left;
-  font-size: 20px;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .text___2F95L {
-    text-align: center;
-    font-weight: 400;
-    padding-bottom: 10px;
-    display: none;
-  }
-}
 .text___7HnAa {
   position: relative;
   width: 100%;
@@ -1154,8 +1134,8 @@
   height: auto;
   max-width: 800px;
   color: #ffffff;
-  font-family: "Belleza", sans-serif;
-  font-weight: 200;
+  font-family: "Bitter", serif;
+  font-weight: 700;
   text-align: left;
   font-size: 20px;
   min-width: 0;
@@ -1168,21 +1148,23 @@
     display: block;
   }
 }
-.text___8Vzje {
+.link__uChA {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 300;
+  font-family: "Bitter", serif;
   text-align: left;
-  font-family: "Lato", sans-serif;
+  font-size: 16px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text___8Vzje {
+  .link__uChA {
     text-align: center;
+    font-weight: 400;
+    padding-bottom: 10px;
+    display: block;
   }
 }
 .link__pihOh {
@@ -1194,7 +1176,7 @@
   font-size: 16px;
   font-weight: 300;
   text-align: left;
-  font-family: "Lato", sans-serif;
+  font-family: "Bitter", serif;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1251,26 +1233,6 @@
     padding: 0px;
   }
 }
-.text___7JGt {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  color: #ffffff;
-  font-family: "Belleza", sans-serif;
-  font-weight: 200;
-  text-align: right;
-  font-size: 20px;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .text___7JGt {
-    text-align: center;
-    font-weight: 400;
-    padding-bottom: 10px;
-    display: none;
-  }
-}
 .text__egltp {
   position: relative;
   width: 100%;
@@ -1297,8 +1259,8 @@
   height: auto;
   max-width: 800px;
   color: #ffffff;
-  font-family: "Belleza", sans-serif;
-  font-weight: 200;
+  font-family: "Bitter", serif;
+  font-weight: 700;
   text-align: right;
   font-size: 20px;
   min-width: 0;
@@ -1320,7 +1282,7 @@
   font-size: 16px;
   font-weight: 300;
   text-align: right;
-  font-family: "Lato", sans-serif;
+  font-family: "Bitter", serif;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1337,7 +1299,7 @@
   font-size: 16px;
   font-weight: 300;
   text-align: right;
-  font-family: "Lato", sans-serif;
+  font-family: "Bitter", serif;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
