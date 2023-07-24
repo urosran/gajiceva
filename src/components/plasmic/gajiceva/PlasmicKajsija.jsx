@@ -28,6 +28,8 @@ import group1PngUT7LoZsTj from "../rakija_site/images/group1Png.png"; // plasmic
 import vector1Png3127LsLhox from "../rakija_site/images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
 import _0LjWiDy82XjpegDibUvibq9 from "./images/_0LjWiDy82Xjpeg.jpg"; // plasmic-import: dibUVIBQ9/picture
 
+createPlasmicElementProxy;
+
 export const PlasmicKajsija__VariantProps = new Array();
 
 export const PlasmicKajsija__ArgProps = new Array();
@@ -382,7 +384,7 @@ function PlasmicKajsija__RenderFunc(props) {
                     sty.text__mhi92
                   )}
                 >
-                  {"Školska 73, Aleksandrovac 37230, Serbia "}
+                  {"\u0160kolska 73, Aleksandrovac 37230, Serbia "}
                 </div>
                 <a
                   className={classNames(

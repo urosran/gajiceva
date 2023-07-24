@@ -28,6 +28,8 @@ import group1PngUT7LoZsTj from "../rakija_site/images/group1Png.png"; // plasmic
 import vector1Png3127LsLhox from "../rakija_site/images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
 import zd9ChSqx2XjpegShOdoew from "./images/zd9ChSqx2Xjpeg.jpg"; // plasmic-import: sh-ODOEW_/picture
 
+createPlasmicElementProxy;
+
 export const PlasmicSljiva__VariantProps = new Array();
 
 export const PlasmicSljiva__ArgProps = new Array();
@@ -240,7 +242,7 @@ function PlasmicSljiva__RenderFunc(props) {
                               </span>
                             </React.Fragment>
                           ) : (
-                            "Šljiva"
+                            "\u0160ljiva"
                           )}
                         </h4>
                       }
@@ -281,7 +283,7 @@ function PlasmicSljiva__RenderFunc(props) {
                               </span>
                             </React.Fragment>
                           ) : (
-                            "Šljiva"
+                            "\u0160ljiva"
                           )}
                         </h4>
                       }
@@ -381,7 +383,7 @@ function PlasmicSljiva__RenderFunc(props) {
                     sty.text__egFso
                   )}
                 >
-                  {"Školska 73, Aleksandrovac 37230, Serbia "}
+                  {"\u0160kolska 73, Aleksandrovac 37230, Serbia "}
                 </div>
                 <a
                   className={classNames(

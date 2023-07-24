@@ -20,7 +20,6 @@ import {
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import BottleComponent from "../../BottleComponent"; // plasmic-import: Ay49hDZCzV/component
-import Button from "../../Button"; // plasmic-import: CzIKnLukEYe/component
 import TextInput from "../../TextInput"; // plasmic-import: mbxfJX-hy_g/component
 import { useScreenVariants as useScreenVariants_7Ks1UnM646Mq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7ks_1UnM646mq/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -35,6 +34,8 @@ import maskGroup2Png23NkeRtvJw from "./images/maskGroup2Png2.png"; // plasmic-im
 import maskGroup4Png2LtRln4M9X from "./images/maskGroup4Png2.png"; // plasmic-import: ltRLN4M9x/picture
 import statisticalRegionsOfSerbiaNuts1PngCzlxPqp1M from "../gajiceva/images/statisticalRegionsOfSerbiaNuts1Png.png"; // plasmic-import: czlxPqp1M/picture
 import group1Png3YitAgVe3N from "../gajiceva/images/group1Png3.png"; // plasmic-import: YITAgVE3n/picture
+
+createPlasmicElementProxy;
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -83,10 +84,15 @@ function PlasmicHomepage__RenderFunc(props) {
       }
     ],
 
-    [$props, $ctx]
+    [$props, $ctx, $refs]
   );
 
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
+  const $state = p.useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries,
+    $refs
+  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_7Ks1UnM646Mq()
   });
@@ -226,7 +232,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       }
                     }}
                   >
-                    {"O NAMA"}
+                    {" \u041e \u041d\u0430\u043c\u0430"}
                   </a>
                   <a
                     className={classNames(
@@ -237,7 +243,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     )}
                     href={"/home#products"}
                   >
-                    {"PROIZVODI"}
+                    {"\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438"}
                   </a>
                   <a
                     className={classNames(
@@ -248,7 +254,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     )}
                     href={"/home#contact"}
                   >
-                    {"KONTAKT"}
+                    {"\u041a\u043e\u043d\u0442\u0430\u043a\u0442"}
                   </a>
                 </React.Fragment>
               }
@@ -292,9 +298,9 @@ function PlasmicHomepage__RenderFunc(props) {
                 <React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#B69760" }}
+                    style={{ color: "#B69760", fontWeight: 700 }}
                   >
-                    {"GAJIĆEVA"}
+                    {"\u0413\u0410\u0408\u0418\u040b\u0415\u0412\u0410"}
                   </span>
                 </React.Fragment>
               </div>
@@ -367,7 +373,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#FFFFFF" }}
                   >
-                    {"Scroll"}
+                    {""}
                   </span>
                 </React.Fragment>
               </div>
@@ -404,7 +410,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   )}
                   link={`/Vilijamovka`}
                 >
-                  {"Vilijamovka"}
+                  {
+                    "\u0412\u0438\u043b\u0438\u0458\u0430\u043c\u043e\u0432\u043a\u0430"
+                  }
                 </BottleComponent>
               </div>
               <div
@@ -425,7 +433,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                   link={`/Kajsija`}
                 >
-                  {"Kajsija"}
+                  {"\u041a\u0430\u0458\u0441\u0438\u0458\u0430"}
                 </BottleComponent>
               </div>
               <div
@@ -446,7 +454,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                   link={`/Sljiva`}
                 >
-                  {"Šljiva"}
+                  {"\u0428\u0459\u0438\u0432\u0430"}
                 </BottleComponent>
               </div>
               <div
@@ -467,7 +475,15 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                   link={`/Dunja`}
                 >
-                  {"Dunja"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__m0U3T
+                    )}
+                  >
+                    {"\u0414\u0443\u045a\u0430"}
+                  </div>
                 </BottleComponent>
               </div>
               <div
@@ -488,7 +504,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                   link={`/Loza`}
                 >
-                  {"Loza"}
+                  {"\u041b\u043e\u0437\u0430"}
                 </BottleComponent>
               </div>
               <div
@@ -513,7 +529,16 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.text__jWhQs
               )}
             >
-              {"RAKIJA PRAVLJENA ZA DUŠU..."}
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700 }}
+                >
+                  {
+                    "\u0420\u0430\u043a\u0438\u0458\u0430 \u043f\u0440\u0430\u0432\u0459\u0435\u043d\u0430 \u0437\u0430 \u0434\u0443\u0448\u0443..."
+                  }
+                </span>
+              </React.Fragment>
             </div>
           </div>
           <div
@@ -576,7 +601,9 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__hQa9R
                     )}
                   >
-                    {"REGION RAKIJA I VINA"}
+                    {
+                      "\u0420\u0415\u0413\u0418\u041e\u041d \u0420\u0410\u041a\u0418\u0408\u0410 \u0418 \u0412\u0418\u041d\u0410"
+                    }
                   </div>
                 ) : null}
                 <div
@@ -586,22 +613,10 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__iAn7U
                   )}
                 >
-                  {"ALEKSANDROVAČKI REGION JE NAJPOZNATIJI PO VINARIJAMA"}
+                  {
+                    "\u0410\u041b\u0415\u041a\u0421\u0410\u041d\u0414\u0420\u041e\u0412\u0410\u0427\u041a\u0418 \u0420\u0415\u0413\u0418\u041e\u041d  \u0408\u0415 \u041d\u0410\u0408\u041f\u041e\u0417\u041d\u0410\u0422\u0418\u0408\u0418  \u041f\u041e \u0412\u0418\u041d\u0410\u0420\u0418\u0408\u0410\u041c\u0410"
+                  }
                 </div>
-                <Button
-                  className={classNames("__wab_instance", sty.button__vjkIk)}
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__d2Ob
-                    )}
-                  >
-                    {"VISE"}
-                  </div>
-                </Button>
               </div>
             </div>
           </div>
@@ -610,6 +625,17 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.contact}
             className={classNames(projectcss.all, sty.contact)}
           >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__c2C25
+              )}
+            >
+              {
+                "\u0413\u0434\u0435 \u0441\u0435 \u043d\u0430\u043b\u0430\u0437\u0438\u043c\u043e?"
+              }
+            </div>
             <p.Stack
               as={"div"}
               data-plasmic-name={"contactParent"}
@@ -618,104 +644,6 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.contactParent)}
               id={"contact"}
             >
-              <div
-                data-plasmic-name={"contact2"}
-                data-plasmic-override={overrides.contact2}
-                className={classNames(projectcss.all, sty.contact2)}
-              >
-                <form
-                  data-plasmic-name={"form"}
-                  data-plasmic-override={overrides.form}
-                  action={"https://formspree.io/f/xoqzoagr"}
-                  className={classNames(projectcss.all, sty.form)}
-                  method={"POST"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__c2C25
-                    )}
-                  >
-                    {"Kako do nas?"}
-                  </div>
-                  <TextInput
-                    data-plasmic-name={"textInput"}
-                    data-plasmic-override={overrides.textInput}
-                    className={classNames("__wab_instance", sty.textInput)}
-                    name={"name"}
-                    onChange={(...eventArgs) => {
-                      p.generateStateOnChangeProp($state, [
-                        "textInput",
-                        "value"
-                      ])((e => e.target?.value).apply(null, eventArgs));
-                    }}
-                    placeholder={"Ime*"}
-                    value={
-                      p.generateStateValueProp($state, [
-                        "textInput",
-                        "value"
-                      ]) ?? ""
-                    }
-                  />
-
-                  <TextInput
-                    data-plasmic-name={"textInput2"}
-                    data-plasmic-override={overrides.textInput2}
-                    className={classNames("__wab_instance", sty.textInput2)}
-                    name={"email"}
-                    onChange={(...eventArgs) => {
-                      p.generateStateOnChangeProp($state, [
-                        "textInput2",
-                        "value"
-                      ])((e => e.target?.value).apply(null, eventArgs));
-                    }}
-                    placeholder={"Email*"}
-                    value={
-                      p.generateStateValueProp($state, [
-                        "textInput2",
-                        "value"
-                      ]) ?? ""
-                    }
-                  />
-
-                  <TextInput
-                    data-plasmic-name={"textInput3"}
-                    data-plasmic-override={overrides.textInput3}
-                    aria-label={"message"}
-                    className={classNames("__wab_instance", sty.textInput3)}
-                    name={"message"}
-                    onChange={(...eventArgs) => {
-                      p.generateStateOnChangeProp($state, [
-                        "textInput3",
-                        "value"
-                      ])((e => e.target?.value).apply(null, eventArgs));
-                    }}
-                    placeholder={"Message*"}
-                    value={
-                      p.generateStateValueProp($state, [
-                        "textInput3",
-                        "value"
-                      ]) ?? ""
-                    }
-                  />
-
-                  <button
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      projectcss.__wab_text,
-                      sty.button__kMYcu
-                    )}
-                    formAction={"https://formspree.io/f/xoqzoagr"}
-                    formMethod={"submit"}
-                    method={"submit"}
-                    type={"submit"}
-                  >
-                    {"POŠALJI"}
-                  </button>
-                </form>
-              </div>
               <div
                 data-plasmic-name={"mapAndInfo"}
                 data-plasmic-override={overrides.mapAndInfo}
@@ -802,12 +730,20 @@ function PlasmicHomepage__RenderFunc(props) {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img___2Tdd)}
-                    displayHeight={"401px"}
+                    displayHeight={"364px"}
                     displayMaxHeight={"none"}
-                    displayMaxWidth={"559px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "404px"
+                        : "966px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"100%"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "100%"
+                    }
                     loading={"lazy"}
                     onClick={async event => {
                       const $steps = {};
@@ -866,24 +802,131 @@ function PlasmicHomepage__RenderFunc(props) {
                     }}
                   />
                 </a>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__lWotf
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "Street Address, Belgrade\n+123 456 9\nexample@gmail.com"
-                      : ""}
-                  </div>
-                ) : null}
               </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div
+                  data-plasmic-name={"contact2"}
+                  data-plasmic-override={overrides.contact2}
+                  className={classNames(projectcss.all, sty.contact2)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xuJU
+                      )}
+                    >
+                      {
+                        "\u0414\u0443\u0433\u0438 \u043d\u0438\u0437 \u0433\u043e\u0434\u0438\u043d\u0430 \u043d\u0430 \u0438\u0441\u0442\u043e\u043c \u043e\u0433\u045a\u0438\u0448\u0442\u0443 \u043f\u0435\u0447\u0435\u043c\u043e \u0440\u0430\u043a\u0438\u0458\u0435..."
+                      }
+                    </div>
+                  ) : null}
+                  {true ? (
+                    <form
+                      data-plasmic-name={"form"}
+                      data-plasmic-override={overrides.form}
+                      action={"https://formspree.io/f/xoqzoagr"}
+                      className={classNames(projectcss.all, sty.form)}
+                      method={"POST"}
+                    >
+                      {true ? (
+                        <TextInput
+                          data-plasmic-name={"textInput"}
+                          data-plasmic-override={overrides.textInput}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput
+                          )}
+                          name={"name"}
+                          onChange={(...eventArgs) => {
+                            p.generateStateOnChangeProp($state, [
+                              "textInput",
+                              "value"
+                            ])((e => e.target?.value).apply(null, eventArgs));
+                          }}
+                          placeholder={"Ime*"}
+                          value={
+                            p.generateStateValueProp($state, [
+                              "textInput",
+                              "value"
+                            ]) ?? ""
+                          }
+                        />
+                      ) : null}
+                      {true ? (
+                        <TextInput
+                          data-plasmic-name={"textInput2"}
+                          data-plasmic-override={overrides.textInput2}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput2
+                          )}
+                          name={"email"}
+                          onChange={(...eventArgs) => {
+                            p.generateStateOnChangeProp($state, [
+                              "textInput2",
+                              "value"
+                            ])((e => e.target?.value).apply(null, eventArgs));
+                          }}
+                          placeholder={"Email*"}
+                          value={
+                            p.generateStateValueProp($state, [
+                              "textInput2",
+                              "value"
+                            ]) ?? ""
+                          }
+                        />
+                      ) : null}
+                      {true ? (
+                        <TextInput
+                          data-plasmic-name={"textInput3"}
+                          data-plasmic-override={overrides.textInput3}
+                          aria-label={"message"}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput3
+                          )}
+                          name={"message"}
+                          onChange={(...eventArgs) => {
+                            p.generateStateOnChangeProp($state, [
+                              "textInput3",
+                              "value"
+                            ])((e => e.target?.value).apply(null, eventArgs));
+                          }}
+                          placeholder={"Message*"}
+                          value={
+                            p.generateStateValueProp($state, [
+                              "textInput3",
+                              "value"
+                            ]) ?? ""
+                          }
+                        />
+                      ) : null}
+                      {true ? (
+                        <button
+                          data-plasmic-name={"button"}
+                          data-plasmic-override={overrides.button}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.button,
+                            projectcss.__wab_text,
+                            sty.button
+                          )}
+                          formAction={"https://formspree.io/f/xoqzoagr"}
+                          formMethod={"submit"}
+                          method={"submit"}
+                          type={"submit"}
+                        >
+                          {"PO\u0160ALJI"}
+                        </button>
+                      ) : null}
+                    </form>
+                  ) : null}
+                </div>
+              ) : null}
             </p.Stack>
           </div>
           <div
@@ -896,16 +939,81 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-override={overrides.footerParentColumns}
               className={classNames(projectcss.all, sty.footerParentColumns)}
             >
-              <div className={classNames(projectcss.all, sty.column___5Pwxl)}>
+              <div className={classNames(projectcss.all, sty.column___6CNh5)}>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___2F95L
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"\u041a\u041e\u041d\u0422\u0410\u041a\u0422"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7HnAa
+                    )}
+                  >
+                    {""}
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___4M2Uu
+                    )}
+                  >
+                    {"\u0411\u0435\u043e\u0433\u0440\u0430\u0434"}
+                  </div>
+                ) : null}
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__rt2AI
+                    sty.text___8Vzje
                   )}
                 >
-                  {""}
+                  {
+                    "\u0428\u043a\u043e\u043b\u0441\u043a\u0430 73, \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0430\u0446 37230, \u0421\u0440\u0431\u0438\u0458\u0430"
+                  }
                 </div>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__pihOh
+                  )}
+                  href={"mailto:'gajiceva@gmai.com"}
+                >
+                  {"gajicevarakija@gmail.com"}
+                </a>
               </div>
               <div className={classNames(projectcss.all, sty.column__lLRk)}>
                 <p.PlasmicImg
@@ -941,7 +1049,46 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text___7JGt
                     )}
                   >
-                    {"KONTAKT"}
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"\u041a\u041e\u041d\u0422\u0410\u041a\u0422"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__egltp
+                    )}
+                  >
+                    {""}
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gzMj3
+                    )}
+                  >
+                    {
+                      "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0430\u0446"
+                    }
                   </div>
                 ) : null}
                 <div
@@ -951,7 +1098,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__gHnb
                   )}
                 >
-                  {"Školska 73, Aleksandrovac 37230, Serbia "}
+                  {
+                    "\u0428\u043a\u043e\u043b\u0441\u043a\u0430 73, \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0430\u0446 37230, \u0421\u0440\u0431\u0438\u0458\u0430"
+                  }
                 </div>
                 <a
                   className={classNames(
@@ -1000,12 +1149,13 @@ const PlasmicDescendants = {
     "map2NeedBetterMap",
     "contact",
     "contactParent",
+    "mapAndInfo",
     "contact2",
     "form",
     "textInput",
     "textInput2",
     "textInput3",
-    "mapAndInfo",
+    "button",
     "footer",
     "footerParentColumns",
     "logo"
@@ -1084,30 +1234,41 @@ const PlasmicDescendants = {
   contact: [
     "contact",
     "contactParent",
+    "mapAndInfo",
     "contact2",
     "form",
     "textInput",
     "textInput2",
     "textInput3",
-    "mapAndInfo"
+    "button"
   ],
 
   contactParent: [
     "contactParent",
+    "mapAndInfo",
     "contact2",
     "form",
     "textInput",
     "textInput2",
     "textInput3",
-    "mapAndInfo"
+    "button"
   ],
 
-  contact2: ["contact2", "form", "textInput", "textInput2", "textInput3"],
-  form: ["form", "textInput", "textInput2", "textInput3"],
+  mapAndInfo: ["mapAndInfo"],
+  contact2: [
+    "contact2",
+    "form",
+    "textInput",
+    "textInput2",
+    "textInput3",
+    "button"
+  ],
+
+  form: ["form", "textInput", "textInput2", "textInput3", "button"],
   textInput: ["textInput"],
   textInput2: ["textInput2"],
   textInput3: ["textInput3"],
-  mapAndInfo: ["mapAndInfo"],
+  button: ["button"],
   footer: ["footer", "footerParentColumns", "logo"],
   footerParentColumns: ["footerParentColumns", "logo"],
   logo: ["logo"]
@@ -1170,12 +1331,13 @@ export const PlasmicHomepage = Object.assign(
     map2NeedBetterMap: makeNodeComponent("map2NeedBetterMap"),
     contact: makeNodeComponent("contact"),
     contactParent: makeNodeComponent("contactParent"),
+    mapAndInfo: makeNodeComponent("mapAndInfo"),
     contact2: makeNodeComponent("contact2"),
     form: makeNodeComponent("form"),
     textInput: makeNodeComponent("textInput"),
     textInput2: makeNodeComponent("textInput2"),
     textInput3: makeNodeComponent("textInput3"),
-    mapAndInfo: makeNodeComponent("mapAndInfo"),
+    button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
     footerParentColumns: makeNodeComponent("footerParentColumns"),
     logo: makeNodeComponent("logo"),

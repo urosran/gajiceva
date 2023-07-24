@@ -22,6 +22,8 @@ import projectcss from "../rakija_site/plasmic_rakija_site.module.css"; // plasm
 import sty from "./PlasmicBottleComponent.module.css"; // plasmic-import: Ay49hDZCzV/css
 import maskGrouppng2NTlqluXgu from "../rakija_site/images/maskGrouppng2.png"; // plasmic-import: NTlqluXgu/picture
 
+createPlasmicElementProxy;
+
 export const PlasmicBottleComponent__VariantProps = new Array();
 
 export const PlasmicBottleComponent__ArgProps = new Array(
@@ -90,7 +92,7 @@ function PlasmicBottleComponent__RenderFunc(props) {
         data-plasmic-override={overrides.img}
         alt={""}
         className={classNames(sty.img)}
-        displayHeight={"auto"}
+        displayHeight={"427px"}
         displayMaxHeight={"none"}
         displayMaxWidth={"100%"}
         displayMinHeight={"0"}

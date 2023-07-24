@@ -28,6 +28,8 @@ import group1PngUT7LoZsTj from "../rakija_site/images/group1Png.png"; // plasmic
 import vector1Png3127LsLhox from "../rakija_site/images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
 import hTk7NOoC2XjpegDZle6Hln from "./images/hTk7NOoC2Xjpeg.jpg"; // plasmic-import: _dZle6hln/picture
 
+createPlasmicElementProxy;
+
 export const PlasmicVilijamovka__VariantProps = new Array();
 
 export const PlasmicVilijamovka__ArgProps = new Array();
@@ -381,7 +383,7 @@ function PlasmicVilijamovka__RenderFunc(props) {
                     sty.text__mqLJy
                   )}
                 >
-                  {"Školska 73, Aleksandrovac 37230, Serbia "}
+                  {"\u0160kolska 73, Aleksandrovac 37230, Serbia "}
                 </div>
                 <a
                   className={classNames(

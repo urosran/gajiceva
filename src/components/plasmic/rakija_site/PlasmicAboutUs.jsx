@@ -28,6 +28,8 @@ import group1PngUT7LoZsTj from "./images/group1Png.png"; // plasmic-import: uT7l
 import vector1Png3127LsLhox from "./images/vector1Png3.png"; // plasmic-import: 127lsLhox/picture
 import image2ArsGLXcy from "../gajiceva/images/image2.jpg"; // plasmic-import: ars-gLXcy/picture
 
+createPlasmicElementProxy;
+
 export const PlasmicAboutUs__VariantProps = new Array();
 
 export const PlasmicAboutUs__ArgProps = new Array();
@@ -141,7 +143,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   )}
                   href={`/about`}
                 >
-                  {"O NAMA"}
+                  {"\u041e \u041d\u0430\u043c\u0430"}
                 </a>
                 <a
                   className={classNames(
@@ -152,7 +154,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   )}
                   href={"/home#products"}
                 >
-                  {"PROIZVODI"}
+                  {"\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438"}
                 </a>
                 <a
                   className={classNames(
@@ -163,7 +165,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   )}
                   href={"/home#contact"}
                 >
-                  {"KONTAKT"}
+                  {"\u041a\u043e\u043d\u0442\u0430\u043a\u0442"}
                 </a>
               </React.Fragment>
             }
@@ -254,7 +256,9 @@ function PlasmicAboutUs__RenderFunc(props) {
                           }
                           style={{ color: "#AC8D5B" }}
                         >
-                          {"Vinarija Gajic"}
+                          {
+                            "\u0412\u0438\u043d\u0430\u0440\u0438\u0458\u0430 \u0413\u0430\u0458\u0438\u045b"
+                          }
                         </span>
                       </React.Fragment>
                     </h2>
@@ -273,43 +277,71 @@ function PlasmicAboutUs__RenderFunc(props) {
                 <React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                    style={{ color: "#FFFFFF" }}
                   >
                     {
-                      "Mi smo porodična kompanija koja je posvećena proizvodnji i prodaji visokokvalitetne domaće rakije. U našoj proizvodnji koristimo samo najbolje voće, koje pažljivo biramo . Sve naše rakije se proizvode po tradicionalnim metodama, koristeći samo prirodne sastojke bez dodataka konzervansa i veštačkih aroma. Naš cilj je da pružimo našim kupcima autentično iskustvo degustiranja rakije, sa punim i bogatim ukusom koji se ne može naći u industrijskim proizvodima."
+                      "\u041c\u0438 \u0441\u043c\u043e \u043f\u043e\u0440\u043e\u0434\u0438\u0447\u043d\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0458\u0430 \u043a\u043e\u0458\u0430 \u0458\u0435 \u043f\u043e\u0441\u0432\u0435\u045b\u0435\u043d\u0430 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u045a\u0438 \u0438 \u043f\u0440\u043e\u0434\u0430\u0458\u0438 \u0432\u0438\u0441\u043e\u043a\u043e\u043a\u0432\u0430\u043b\u0438\u0442\u0435\u0442\u043d\u0435 \u0434\u043e\u043c\u0430\u045b\u0435 \u0440\u0430\u043a\u0438\u0458\u0435. \u0423 \u043d\u0430\u0448\u043e\u0458 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u045a\u0438 \u043a\u043e\u0440\u0438\u0441\u0442\u0438\u043c\u043e \u0441\u0430\u043c\u043e \u043d\u0430\u0458\u0431\u043e\u0459\u0435 \u0432\u043e\u045b\u0435, \u043a\u043e\u0458\u0435 \u043f\u0430\u0436\u0459\u0438\u0432\u043e \u0431\u0438\u0440\u0430\u043c\u043e . \u0421\u0432\u0435 \u043d\u0430\u0448\u0435 \u0440\u0430\u043a\u0438\u0458\u0435 \u0441\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0435 \u043f\u043e \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u0430\u043b\u043d\u0438\u043c \u043c\u0435\u0442\u043e\u0434\u0430\u043c\u0430, \u043a\u043e\u0440\u0438\u0441\u0442\u0435\u045b\u0438 \u0441\u0430\u043c\u043e \u043f\u0440\u0438\u0440\u043e\u0434\u043d\u0435 \u0441\u0430\u0441\u0442\u043e\u0458\u043a\u0435 \u0431\u0435\u0437 \u0434\u043e\u0434\u0430\u0442\u0430\u043a\u0430 \u043a\u043e\u043d\u0437\u0435\u0440\u0432\u0430\u043d\u0441\u0430 \u0438 \u0432\u0435\u0448\u0442\u0430\u0447\u043a\u0438\u0445 \u0430\u0440\u043e\u043c\u0430. \u041d\u0430\u0448 \u0446\u0438\u0459 \u0458\u0435 \u0434\u0430 \u043f\u0440\u0443\u0436\u0438\u043c\u043e \u043d\u0430\u0448\u0438\u043c \u043a\u0443\u043f\u0446\u0438\u043c\u0430 \u0430\u0443\u0442\u0435\u043d\u0442\u0438\u0447\u043d\u043e \u0438\u0441\u043a\u0443\u0441\u0442\u0432\u043e \u0434\u0435\u0433\u0443\u0441\u0442\u0438\u0440\u0430\u045a\u0430 \u0440\u0430\u043a\u0438\u0458\u0435, \u0441\u0430 \u043f\u0443\u043d\u0438\u043c \u0438 \u0431\u043e\u0433\u0430\u0442\u0438\u043c \u0443\u043a\u0443\u0441\u043e\u043c \u043a\u043e\u0458\u0438 \u0441\u0435 \u043d\u0435 \u043c\u043e\u0436\u0435 \u043d\u0430\u045b\u0438 \u0443 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0458\u0441\u043a\u0438\u043c \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u043c\u0430.\u00a0\u00a0"
                     }
                   </span>
                   <React.Fragment>{"\n"}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"\u00a0\u00a0"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"\u00a0\u00a0"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {
+                      "\u00a0\u00a0\u041d\u0430\u0448\u0430 \u0459\u0443\u0431\u0430\u0432 \u043f\u0440\u0435\u043c\u0430 \u0440\u0430\u043a\u0438\u0458\u0438 \u0458\u0435 \u0434\u0443\u0431\u043e\u043a\u043e \u0443\u043a\u043e\u0440\u0435\u045a\u0435\u043d\u0430 \u0443 \u043d\u0430\u0448\u043e\u0458 \u043f\u043e\u0440\u043e\u0434\u0438\u0447\u043d\u043e\u0458 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0458\u0438, \u0438 \u043d\u0430\u0448\u0430 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u045a\u0430 \u0458\u0435 \u043f\u0430\u0436\u0459\u0438\u0432\u043e \u0440\u0430\u0437\u0432\u0438\u0458\u0430\u043d\u0430 \u0442\u043e\u043a\u043e\u043c \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0458\u0430. \u0423\u0437\u0433\u0430\u0458\u0430\u045a\u0435 \u0432\u043e\u045b\u0430 \u0438 \u043f\u0440\u0430\u0432\u0459\u0435\u045a\u0435 \u0440\u0430\u043a\u0438\u0458\u0435 \u0441\u0443 \u0443\u043c\u0435\u0442\u043d\u043e\u0441\u0442 \u043a\u043e\u0458\u0443 \u0441\u043c\u043e \u0443\u0441\u0430\u0432\u0440\u0448\u0438\u043b\u0438 \u0442\u043e\u043a\u043e\u043c \u0433\u043e\u0434\u0438\u043d\u0430, \u0438 \u043a\u043e\u0458\u0443 \u0441\u043c\u043e \u043f\u0440\u0435\u043d\u0435\u043b\u0438 \u0441\u0430 \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0458\u0435 \u043d\u0430 \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0458\u0443. \u041d\u0430\u0448\u0430 \u043f\u043e\u0440\u043e\u0434\u0438\u0447\u043d\u0430 \u0444\u0438\u043b\u043e\u0437\u043e\u0444\u0438\u0458\u0430 \u043f\u043e\u0434\u0440\u0430\u0437\u0443\u043c\u0435\u0432\u0430 \u043f\u043e\u0448\u0442\u043e\u0432\u0430\u045a\u0435 \u043f\u0440\u0438\u0440\u043e\u0434\u0435 \u0438 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0458\u0435, \u043a\u0430\u043e \u0438 \u043e\u0434\u0440\u0436\u0438\u0432\u043e\u0441\u0442 \u0443 \u043d\u0430\u0448\u043e\u0458 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u045a\u0438. \u041a\u0443\u043f\u043e\u0432\u0438\u043d\u043e\u043c \u043d\u0430\u0448\u0435 \u0440\u0430\u043a\u0438\u0458\u0435, \u043a\u0443\u043f\u0443\u0458\u0435\u0442\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434 \u043a\u043e\u0458\u0438 \u0458\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d \u0441\u0430 \u0459\u0443\u0431\u0430\u0432\u0459\u0443 \u0438 \u0441\u0442\u0440\u0430\u0448\u045b\u0443 \u0437\u0430 \u043a\u0432\u0430\u043b\u0438\u0442\u0435\u0442\u043e\u043c.\u00a0\u00a0"
+                    }
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"\u00a0\u00a0"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {"\u00a0\u00a0"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {
+                      "\u00a0 \u041a\u043e\u0434 \u043d\u0430\u0441 \u0441\u0435 \u043d\u0435 \u0440\u0430\u0434\u0438 \u0441\u0430\u043c\u043e \u043e \u043f\u0440\u043e\u0434\u0430\u0458\u0438 \u0440\u0430\u043a\u0438\u0458\u0435, \u0432\u0435\u045b \u0438 \u043e \u0441\u0442\u0432\u0430\u0440\u0430\u045a\u0443 \u0437\u0430\u0458\u0435\u0434\u043d\u0438\u0446\u0435 \u0459\u0443\u0431\u0438\u0442\u0435\u0459\u0430 \u0434\u043e\u0431\u0440\u043e\u0433 \u0443\u043a\u0443\u0441\u0430 \u0438 \u043a\u0432\u0430\u043b\u0438\u0442\u0435\u0442\u0430. \u041d\u0430\u0448\u0430 \u043c\u0438\u0441\u0438\u0458\u0430 \u0458\u0435 \u0434\u0430 \u0448\u0438\u0440\u0438\u043c\u043e \u0441\u0432\u0435\u0441\u0442 \u043e \u043a\u0432\u0430\u043b\u0438\u0442\u0435\u0442\u043d\u043e\u0458 \u0440\u0430\u043a\u0438\u0458\u0438 \u0438 \u0434\u0430 \u0435\u0434\u0443\u043a\u0443\u0458\u0435\u043c\u043e \u0459\u0443\u0434\u0435 \u043e \u045a\u0435\u043d\u0438\u043c \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u0430\u043b\u043d\u0438\u043c \u0432\u0440\u0435\u0434\u043d\u043e\u0441\u0442\u0438\u043c\u0430 \u0438 \u043d\u0430\u0447\u0438\u043d\u0443 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u045a\u0435. \u041d\u0430\u0448\u0430 \u043f\u0440\u043e\u0434\u0430\u0432\u043d\u0438\u0446\u0430 \u043d\u0435 \u043f\u0440\u043e\u0434\u0430\u0458\u0435 \u0441\u0430\u043c\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0435, \u0432\u0435\u045b \u0438 \u0438\u0441\u043a\u0443\u0441\u0442\u0432\u0430. \u0420\u0435\u0434\u043e\u0432\u043d\u043e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0443\u0458\u0435\u043c\u043e \u0434\u0435\u0433\u0443\u0441\u0442\u0430\u0446\u0438\u0458\u0435 \u0438 \u0440\u0430\u0434\u0438\u043e\u043d\u0438\u0446\u0435, \u0433\u0434\u0435 \u043a\u0443\u043f\u0446\u0438 \u043c\u043e\u0433\u0443 \u0434\u0430 \u043f\u0440\u043e\u0431\u0430\u0458\u0443 \u0440\u0430\u0437\u043b\u0438\u0447\u0438\u0442\u0435 \u0432\u0440\u0441\u0442\u0435 \u0440\u0430\u043a\u0438\u0458\u0435 \u0438 \u043d\u0430\u0443\u0447\u0435 \u0432\u0438\u0448\u0435 \u043e \u045a\u0435\u043d\u043e\u043c \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u043d\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0441\u0443. \u0416\u0435\u043b\u0438\u043c\u043e \u0434\u0430 \u043d\u0430\u0448\u0438 \u043a\u0443\u043f\u0446\u0438 \u043e\u0441\u0435\u0442\u0435 \u0441\u0442\u0440\u0430\u0441\u0442 \u0438 \u0459\u0443\u0431\u0430\u0432 \u043a\u043e\u0458\u0443 \u0438\u043c\u0430\u043c\u043e \u043f\u0440\u0435\u043c\u0430 \u0440\u0430\u043a\u0438\u0458\u0438, \u0438 \u0434\u0430 \u0441\u0435 \u043f\u0440\u0438\u0434\u0440\u0443\u0436\u0435 \u043d\u0430\u0448\u043e\u0458 \u0437\u0430\u0458\u0435\u0434\u043d\u0438\u0446\u0438 \u0459\u0443\u0431\u0438\u0442\u0435\u0459\u0430 \u0434\u043e\u0431\u0440\u043e\u0433 \u0443\u043a\u0443\u0441\u0430.\u00a0\u00a0"
+                    }
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
                   >
                     {""}
                   </span>
                   <React.Fragment>{"\n"}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF", fontWeight: 700 }}
-                  >
-                    {
-                      "Naša ljubav prema rakiji je duboko ukorenjena u našoj porodičnoj tradiciji, i naša proizvodnja je pažljivo razvijana tokom generacija. Uzgajanje voća i pravljenje rakije su umetnost koju smo usavršili tokom godina, i koju smo preneli sa generacije na generaciju. Naša porodična filozofija podrazumeva poštovanje prirode i tradicije, kao i održivost u našoj proizvodnji. Kupovinom naše rakije, kupujete proizvod koji je proizveden sa ljubavlju i strašću za kvalitetom."
-                    }
-                  </span>
-                  <React.Fragment>{"\n"}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF", fontWeight: 700 }}
+                    style={{ color: "#000000" }}
                   >
                     {""}
-                  </span>
-                  <React.Fragment>{"\n"}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF", fontWeight: 700 }}
-                  >
-                    {
-                      "Kod nas se ne radi samo o prodaji rakije, već i o stvaranju zajednice ljubitelja dobrog ukusa i kvaliteta. Naša misija je da širimo svest o kvalitetnoj rakiji i da edukujemo ljude o njenim tradicionalnim vrednostima i načinu proizvodnje. Naša prodavnica ne prodaje samo proizvode, već i iskustva. Redovno organizujemo degustacije i radionice, gde kupci mogu da probaju različite vrste rakije i nauče više o njenom proizvodnom procesu. Želimo da naši kupci osete strast i ljubav koju imamo prema rakiji, i da se pridruže našoj zajednici ljubitelja dobrog ukusa."
-                    }
                   </span>
                   <React.Fragment>{"\n"}</React.Fragment>
                 </React.Fragment>
@@ -359,21 +391,6 @@ function PlasmicAboutUs__RenderFunc(props) {
                 />
               </div>
               <div className={classNames(projectcss.all, sty.column__grloR)}>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vnZpc
-                    )}
-                  >
-                    {"KONTAKT"}
-                  </div>
-                ) : null}
                 <div
                   className={classNames(
                     projectcss.all,
@@ -381,7 +398,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.text__aGdyr
                   )}
                 >
-                  {"Školska 73, Aleksandrovac 37230, Serbia "}
+                  {""}
                 </div>
                 <a
                   className={classNames(
@@ -392,7 +409,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   )}
                   href={"mailto:'gajiceva@gmai.com"}
                 >
-                  {"gajicevarakija@gmail.com"}
+                  {""}
                 </a>
               </div>
             </div>
